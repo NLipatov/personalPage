@@ -1,0 +1,38 @@
+.Home{
+    background-color: black;
+    height: 500px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+}
+.ShortInfo {
+    font-size: 30pt;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.introduction{
+}
+
+.introduction span:nth-child(2){
+    color: #BC8CF2;
+}
+.introduction span:nth-child(1)::after{
+    content: " ";
+}
+
+.PhotoContainer {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profilePicture{
+    margin-left: -111px;
+    margin-top: -63px;
+    transform: scale(0.8);
+}
