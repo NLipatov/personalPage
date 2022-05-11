@@ -1,19 +1,36 @@
 .Header {
+    display: flex;
     padding: 10px 50px 10px 50px;
     position: fixed;
     background: rgba(0, 0, 0, 0.384);
-    height: 30px;
     width: 100%;
     backdrop-filter: blur(1px);
     border-bottom: 0.5px solid white;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+}
+.HeaderContent{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 100px);
 }
 .Name {
     font-size: 19pt;
     font-weight: 500;
     height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     color: #BC8CF2;
     text-shadow: 2px 0px black;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: auto;
+}
+.NavBar a{
+    text-decoration: none;
+    color:#BC8CF2;
 }

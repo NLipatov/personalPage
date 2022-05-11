@@ -5,6 +5,7 @@ import Home from '../Home/Home';
 import Skills from '../Skills/Skills';
 import Contacts from '../Contacts/Contacts';
 import useOnScreen from "../../Hooks/useOnScreen";
+import About from '../About/About';
 
 const App = () => {
 
@@ -25,7 +26,8 @@ const App = () => {
   return (
     <div className="App">
       <Header/>
-      <Home/>      
+      <Home/>     
+      <About/> 
       {/* <Skills 
       skillsVisible={onSkillsVisible}
       skillsNotVisible={onSkillsNotVisible}/>

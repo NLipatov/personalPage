@@ -4,7 +4,7 @@
     color: white;
     display: flex;
     align-items: center;
-    padding: 10px 50px 10px 50px;
+    padding: 60px 50px 10px 50px;
 }
 .ShortInfo {
     font-size: 30pt;
@@ -23,16 +23,17 @@
 }
 
 .PhotoContainer {
-    width: 350px;
-    height: 350px;
     overflow: hidden;
-    border-radius: 25px;
+    height: 80%;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .profilePicture{
-    margin-left: -111px;
-    margin-top: -63px;
-    transform: scale(0.8);
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
 }

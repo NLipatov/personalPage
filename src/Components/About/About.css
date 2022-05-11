@@ -1,0 +1,19 @@
+.About{
+    display: flex;
+    background-color: black;
+    height: 500px;
+    color: white;
+    padding: 10px 50px 10px 50px;
+}
+.aboutPhotoContainer{
+    border: 10px solid  #BC8CF2;
+    border-top-left-radius: 25px;
+}
+.TextContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    padding-top: 0px;
+    line-height: 1.5;
+}
