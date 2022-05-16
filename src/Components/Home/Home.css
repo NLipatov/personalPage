@@ -1,6 +1,6 @@
 .Home{
     background-color: black;
-    height: 500px;
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
@@ -36,4 +36,19 @@
     height: 300px;
     width: 300px;
     object-fit: cover;
+}
+
+.downArrowsDiv{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: scrollDownArrows ease infinite;
+    animation-duration: 1s;
+}
+
+@keyframes scrollDownArrows {
+    0% {transform: translate(0, -10px);}
+    50% {transform: translate(0, 0px);}
+    100% {transform: translate(0, -10px);}
 }
