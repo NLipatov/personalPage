@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 import React, {useEffect, useState} from "react";
 
-const Home = ({onAboutComponentVisible}) => {
+const Home = ({setAboutVisibility}) => {
     const downArrows = <FontAwesomeIcon icon={faAngleDoubleDown} />
     useEffect(()=>{
-        onAboutComponentVisible.current = aboutVisible;
+        setAboutVisibility.current = aboutVisible;
     }, []);
 
     const [isaboutVisible, setAboutVisible] = useState(false);

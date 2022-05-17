@@ -21,7 +21,9 @@ const App = () => {
     ComponentsVisible.current.isSkillsVisible = false;
   };
 
-  const setAboutVisibilityInHome = useRef(null);
+  const setAboutVisibilityInHome = useRef(()=>{
+    return;
+  });
 
   const onAboutVisible = () => {
     ComponentsVisible.current.isAboutVisible = true;
@@ -37,7 +39,7 @@ const App = () => {
     <div className="App">
       <Header/>
       <Home 
-        onAboutComponentVisible={setAboutVisibilityInHome}/>     
+        setAboutVisibility={setAboutVisibilityInHome}/>     
       <About
         aboutVisible={onAboutVisible}
         aboutNotVisible={onAboutNotVisible}/> 
