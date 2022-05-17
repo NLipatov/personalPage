@@ -10,28 +10,41 @@ import About from '../About/About';
 const App = () => {
 
   const ComponentsVisible = useRef({
-    isSkillsVisible: false
+    isSkillsVisible: false,
+    isAboutVisible: false,
   });
 
   const onSkillsVisible = () => {
-    console.log('Skills Visible');
     ComponentsVisible.current.isSkillsVisible = true;
   };
   const onSkillsNotVisible = () => {
-    console.log('Skills Not Visible');
     ComponentsVisible.current.isSkillsVisible = false;
+  };
+
+  const setAboutVisibilityInHome = useRef(null);
+
+  const onAboutVisible = () => {
+    ComponentsVisible.current.isAboutVisible = true;
+    setAboutVisibilityInHome.current(true);
+  };
+  const onAboutNotVisible = () => {
+    ComponentsVisible.current.isAboutVisible = false;
+    setAboutVisibilityInHome.current(false);
   };
 
 
   return (
     <div className="App">
       <Header/>
-      <Home/>     
-      <About/> 
-      {/* <Skills 
-      skillsVisible={onSkillsVisible}
-      skillsNotVisible={onSkillsNotVisible}/>
-      <Contacts/> */}
+      <Home 
+        onAboutComponentVisible={setAboutVisibilityInHome}/>     
+      <About
+        aboutVisible={onAboutVisible}
+        aboutNotVisible={onAboutNotVisible}/> 
+      <Skills 
+        skillsVisible={onSkillsVisible}
+        skillsNotVisible={onSkillsNotVisible}/>
+      <Contacts/>
 
     </div>
   );
