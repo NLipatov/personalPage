@@ -3,6 +3,7 @@ import useOnScreen from "../../Hooks/useOnScreen";
 import { useRef, useEffect } from "react";
 import Declarator from "../ComponentDeclarator/Declarator";
 import SingleSkill from "./SingleSkill/SingleSkill";
+import sortArray from 'sort-array'
 
 const Skills = ({skillsVisible, skillsNotVisible}) => {
     const ref = useRef();
@@ -37,12 +38,12 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
             percentage: 75
         },
         {
-            name: "SQL",
-            percentage: 55
-        },
-        {
             name: "Python",
             percentage: 75
+        },
+        {
+            name: "SQL",
+            percentage: 55
         },
     ]
 
@@ -62,7 +63,7 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
         {
             name: "ASP .NET Core Web API",
-            percentage: 77
+            percentage: 80
         },
         {
             name: "Entity FrameWork",
@@ -70,7 +71,7 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
         {
             name: "Git",
-            percentage: 80
+            percentage: 77
         },
         {
             name: "Docker",
@@ -78,6 +79,15 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
     ]
 
+    const primarySkillsArraySorted = sortArray(secondarySkillsArray, {
+        by: 'percentage',
+        order: 'desc'
+    });
+
+    const secondarySkillsArraySorted = sortArray(secondarySkillsArray, {
+        by: 'percentage',
+        order: 'desc'
+    });
 
     return (
         <div
@@ -86,12 +96,12 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
             <Declarator DeclaratorValue={"Skills"}/>
             <div className="techStack">
                 <div className="skillsList">
-                    {primarySkillsArray.map((skill, i) => (
+                    {primarySkillsArraySorted.map((skill, i) => (
                         <SingleSkill SkillObject={skill} key={i}/>
                     ))}
                 </div>
                 <div className="skillsList">
-                    {secondarySkillsArray.map((skill, i) => (
+                    {secondarySkillsArraySorted.map((skill, i) => (
                         <SingleSkill SkillObject={skill} key={i}/>
                     ))}
                 </div>
