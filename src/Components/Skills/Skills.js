@@ -79,7 +79,7 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
     ]
 
-    const primarySkillsArraySorted = sortArray(secondarySkillsArray, {
+    const primarySkillsArraySorted = sortArray(primarySkillsArray, {
         by: 'percentage',
         order: 'desc'
     });
