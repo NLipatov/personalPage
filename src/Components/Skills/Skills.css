@@ -1,4 +1,9 @@
 .Skills {
     height: 500px;
-    background: lightcoral;
+    background: black;
+    padding: 10px;
+}
+
+.skillsList {
+    padding: 40px;
 }

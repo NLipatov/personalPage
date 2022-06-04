@@ -3,10 +3,10 @@ import profilePicture from "../../img/photo5463225416312535627.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useRef} from "react";
 
 const Home = ({setAboutVisibility}) => {
-    const userIcon = <FontAwesomeIcon icon={faUser} style={{"fontSize": "21pt" }}/>
+    const userIcon = <FontAwesomeIcon icon={faUser} style={{fontSize: "21pt" }}/>
     const downArrowsIcon = <FontAwesomeIcon icon={faAngleDoubleDown} />
     useEffect(()=>{
         setAboutVisibility.current = aboutVisible;
@@ -18,7 +18,7 @@ const Home = ({setAboutVisibility}) => {
         setAboutVisible(argument);
     }
     return (
-        <div className="Home">
+        <div className="Home" id="home">
             <div className="ShortInfo">
                 <span>
                     Hi there!
@@ -34,7 +34,7 @@ const Home = ({setAboutVisibility}) => {
                 <span style={{fontSize: "11pt", marginTop: "10px"}}>
                         Creative Web Developer Offering 2+ Years Of Experience Providing High-Impact Web Solutions For Many Different Organizations.
                 </span>
-                <a href="#aboutAnchor" className="btn">
+                <a href="#about" className="btn">
                     More info about me
                     {userIcon}
                 </a>
@@ -45,7 +45,6 @@ const Home = ({setAboutVisibility}) => {
             <div className="downArrowsDiv">
                 {!isaboutVisible ? downArrowsIcon : null}
             </div>
-            <div id="aboutAnchor" style={{position: "absolute", bottom: "0"}}/>
         </div>
     )
 }

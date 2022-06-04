@@ -1,0 +1,22 @@
+.declaratorRow {
+    display: flex;
+    gap: 10px;
+    font-size: 30pt;
+    color: white;
+    margin: 0;
+    justify-content: center;
+}
+
+.declaratorRow span:nth-child(2){
+    color: #BC8CF2;
+}
+
+.declaratorRow span:nth-child(2)::before{
+    content: '';
+    height: 2.5px;
+    width: 100px;
+    background-color: #BC8CF2;
+    position: absolute;
+    margin-top: 35pt;
+    margin-left: 10px;
+}

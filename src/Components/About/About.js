@@ -16,7 +16,7 @@ const About = ({aboutVisible, aboutNotVisible}) => {
     return ( 
         <div className="About" id="about" ref={ref}>
             <div style={{minWidth: '320px'}} className="PhotoContainer">
-                <img className="profilePicture aboutPhotoContainer" src={AboutPicture}/>
+                <img className="profilePicture aboutPhotoContainer" src={AboutPicture} alt={"Nikita Lipatov"}/>
             </div>
             <div className="TextContainer">
                 <h4>
