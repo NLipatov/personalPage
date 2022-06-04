@@ -15,13 +15,17 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         skillsNotVisible();
     }
 
-    const skillsArray = [
+    const primarySkillsArray = [
         {
             name: "HTML",
             percentage: 95
         },
         {
             name: "CSS",
+            percentage: 85
+        },
+        {
+            name: "C#",
             percentage: 85
         },
         {
@@ -33,8 +37,44 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
             percentage: 75
         },
         {
-            name: "C#",
-            percentage: 85
+            name: "SQL",
+            percentage: 55
+        },
+        {
+            name: "Python",
+            percentage: 75
+        },
+    ]
+
+    const secondarySkillsArray = [
+
+        {
+            name: "ASP .NET Core Blazor",
+            percentage: 95
+        },
+        {
+            name: "React & React Native",
+            percentage: 83
+        },
+        {
+            name: "Angular",
+            percentage: 45
+        },
+        {
+            name: "ASP .NET Core Web API",
+            percentage: 77
+        },
+        {
+            name: "Entity FrameWork",
+            percentage: 75
+        },
+        {
+            name: "Git",
+            percentage: 80
+        },
+        {
+            name: "Docker",
+            percentage: 73
         },
     ]
 
@@ -44,10 +84,17 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         className="Skills"
         ref={ref}>
             <Declarator DeclaratorValue={"Skills"}/>
-            <div className="skillsList">
-                {skillsArray.map((skill, i) => (
-                    <SingleSkill SkillObject={skill} key={i}/>
-                ))}
+            <div className="techStack">
+                <div className="skillsList">
+                    {primarySkillsArray.map((skill, i) => (
+                        <SingleSkill SkillObject={skill} key={i}/>
+                    ))}
+                </div>
+                <div className="skillsList">
+                    {secondarySkillsArray.map((skill, i) => (
+                        <SingleSkill SkillObject={skill} key={i}/>
+                    ))}
+                </div>
             </div>
         </div>
     )
