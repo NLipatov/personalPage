@@ -5,18 +5,10 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import React, {useEffect, useState, useRef} from "react";
 
-const Home = ({setAboutVisibility}) => {
+const Home = () => {
     const userIcon = <FontAwesomeIcon icon={faUser} style={{fontSize: "21pt" }}/>
     const downArrowsIcon = <FontAwesomeIcon icon={faAngleDoubleDown} />
-    useEffect(()=>{
-        setAboutVisibility.current = aboutVisible;
-    }, []);
 
-    const [isaboutVisible, setAboutVisible] = useState(false);
-
-    const aboutVisible = (argument) => {
-        setAboutVisible(argument);
-    }
     return (
         <div className="Home" id="home">
             <div className="ShortInfo">
@@ -43,7 +35,8 @@ const Home = ({setAboutVisibility}) => {
                 <img className="profilePicture" src={profilePicture}/>
             </div>
             <div className="downArrowsDiv">
-                {!isaboutVisible ? downArrowsIcon : null}
+                {downArrowsIcon}
+                {/* {!isaboutVisible ? downArrowsIcon : null} */}
             </div>
         </div>
     )

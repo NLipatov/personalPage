@@ -12,8 +12,6 @@
     flex-direction: column;
     text-align: left;
 }
-.introduction{
-}
 
 .introduction span:nth-child(2){
     color: #BC8CF2;
@@ -45,6 +43,7 @@
     right: 0;
     animation: scrollDownArrows ease infinite;
     animation-duration: 1s;
+    font-size: 30pt;
 }
 
 @keyframes scrollDownArrows {

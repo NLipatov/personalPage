@@ -21,25 +21,24 @@ const App = () => {
     ComponentsVisible.current.isSkillsVisible = false;
   };
 
-  const setAboutVisibilityInHome = useRef(()=>{
-    return;
-  });
-
   const onAboutVisible = () => {
-    ComponentsVisible.current.isAboutVisible = true;
-    setAboutVisibilityInHome.current(true);
+    const downArrow = document.querySelector(".downArrowsDiv");
+    if(downArrow){
+      downArrow.style.display = "none";
+    }
   };
   const onAboutNotVisible = () => {
-    ComponentsVisible.current.isAboutVisible = false;
-    setAboutVisibilityInHome.current(false);
+    const downArrow = document.querySelector(".downArrowsDiv");
+    if(downArrow){
+      downArrow.style.display = "";
+    }
   };
 
 
   return (
     <div className="App">
       <Header/>
-      <Home 
-        setAboutVisibility={setAboutVisibilityInHome}/>     
+      <Home/>     
       <About
         aboutVisible={onAboutVisible}
         aboutNotVisible={onAboutNotVisible}/> 
