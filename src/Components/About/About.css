@@ -1,7 +1,7 @@
 .About{
     display: flex;
     background-color: black;
-    height: 500px;
+    height: auto;
     color: white;
     padding: 10px 50px 10px 50px;
 }
@@ -16,4 +16,14 @@
     padding: 10px;
     padding-top: 0px;
     line-height: 1.5;
+}
+
+.BottomText h4 {
+    color: #BC8CF2;
+}
+.BottomText h4 span {
+    color: white;
+}
+.TextContainer h4 span {
+    color: #BC8CF2;
 }

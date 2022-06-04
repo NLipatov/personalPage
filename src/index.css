@@ -5,6 +5,10 @@
   format("truetype")
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Comfortaa", sans-serif;
@@ -17,4 +21,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.btn{
+  border: #BC8CF2 3px solid;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  color: #BC8CF2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scrolledToAboutComponent {
+  transform: translate3d(0px, -90vh, 0px);
+    transition: all 700ms ease;
 }
