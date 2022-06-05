@@ -4,17 +4,8 @@ import useOnScreen from "../../Hooks/useOnScreen";
 import React, {useRef} from "react";
 
 const About = ({aboutVisible, aboutNotVisible}) => {
-    const ref = useRef();
-    const isSkillsVisible = useOnScreen(ref);
-
-    if(isSkillsVisible){
-        aboutVisible();
-    }
-    else{
-        aboutNotVisible();
-    }
     return ( 
-        <div className="About" id="about" ref={ref}>
+        <div className="About" id="about">
             <div style={{minWidth: '320px'}} className="PhotoContainer">
                 <img className="profilePicture aboutPhotoContainer" src={AboutPicture} alt={"Nikita Lipatov"}/>
             </div>

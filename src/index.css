@@ -18,9 +18,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::-webkit-scrollbar {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(188, 140, 242, 0.357);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(188, 140, 242, 0.5);
 }
 
 .btn{

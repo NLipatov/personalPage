@@ -3,13 +3,30 @@ import Declarator from "../ComponentDeclarator/Declarator";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-
+import useOnScreen from "../../Hooks/useOnScreen";
+import React, { useRef } from "react";
 
 const Service = () => {
+    const ref = useRef();
+    const isServiceVisible = useOnScreen(ref);
+
+    const targetElement = document.getElementById("NavBarServiceLink");
+    if(isServiceVisible){
+        if(targetElement){
+            targetElement.style.color = "#BC8CF2";
+        }
+    }
+    else{
+        if(targetElement){
+            targetElement.style.color = "white";
+        }
+    }
+
+
     const briefcaseIcon = <FontAwesomeIcon icon={faBriefcase} />
     const chevronDownIcon = <FontAwesomeIcon icon={faChevronDown} />
     return(
-        <div className="Service">
+        <div className="Service" ref={ref} id="service">
             <Declarator DeclaratorValue={"Service"}/>
             <div className="workHistoryItem">
                 <span className="briefcaseIcon">

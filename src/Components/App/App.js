@@ -11,6 +11,7 @@ import Service from '../MyService/Service';
 const App = () => {
 
   const ComponentsVisible = useRef({
+    isHomeVisible: false,
     isSkillsVisible: false,
     isAboutVisible: false,
   });
