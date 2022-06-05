@@ -95,3 +95,13 @@
     content: "\"";
     color: white;
 }
+
+.chevronDownIcon {
+    display: flex;
+    margin-left: -11px;
+    font-size: 23pt;
+    font-weight: bold;
+    color: #BC8CF2;
+    position: absolute;
+    margin-top: -20px;
+}

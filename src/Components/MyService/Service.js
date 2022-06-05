@@ -1,11 +1,13 @@
 import "./Service.css";
 import Declarator from "../ComponentDeclarator/Declarator";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 
 const Service = () => {
     const briefcaseIcon = <FontAwesomeIcon icon={faBriefcase} />
+    const chevronDownIcon = <FontAwesomeIcon icon={faChevronDown} />
     return(
         <div className="Service">
             <Declarator DeclaratorValue={"Service"}/>
@@ -84,11 +86,9 @@ const Service = () => {
                     </span>
                 </div>
             </div>
-            {/* <div className="workHistoryItem">
-                <span className="briefcaseIcon">
-                    {briefcaseIcon}
-                </span>
-            </div> */}
+            <span className="chevronDownIcon">
+                    {chevronDownIcon}
+            </span>
         </div>
     )
 }
