@@ -7,13 +7,16 @@
 .progressbar {
     width: 100%;
     background-color: rgba(81, 77, 77, 0.81);
-    height: 5px;
+    height: 10px;
 }
 
 .progress {
-    height: 5px;
+    height: 100%;
     width: 0%;
     background-color: #BC8CF2;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 3s ease 0s;
 }
 
 .skillName {

@@ -39,7 +39,7 @@ const About = ({aboutVisible, aboutNotVisible}) => {
                         Major roles: <span>Fullstack web-developer</span>
                     </h4>
                     <h4>
-                        Minor roles: <span>Mobile and Destop developer, DevOps</span>
+                        Minor roles: <span>Mobile and Desktop developer, DevOps</span>
                     </h4>
                 </div>
             </div>

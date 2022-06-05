@@ -3,47 +3,51 @@ import useOnScreen from "../../Hooks/useOnScreen";
 import { useRef, useEffect } from "react";
 import Declarator from "../ComponentDeclarator/Declarator";
 import SingleSkill from "./SingleSkill/SingleSkill";
-import sortArray from 'sort-array'
+import sortArray from 'sort-array';
 
 const Skills = ({skillsVisible, skillsNotVisible}) => {
     const ref = useRef();
     const isSkillsVisible = useOnScreen(ref);
 
-    if(isSkillsVisible){
-        skillsVisible();
-    }
-    else{
-        skillsNotVisible();
-    }
+    const progressAnimationPlayed = useRef(false);
+
+
 
     const primarySkillsArray = [
         {
             name: "HTML",
-            percentage: 95
+            percentage: 95,
+            id: 0
         },
         {
             name: "CSS",
-            percentage: 85
+            percentage: 85,
+            id: 1
         },
         {
             name: "C#",
-            percentage: 85
+            percentage: 85,
+            id: 2
         },
         {
             name: "JavaScript",
-            percentage: 77
+            percentage: 77,
+            id: 3
         },
         {
             name: "TypeScript",
-            percentage: 75
+            percentage: 75,
+            id: 4
         },
         {
             name: "Python",
-            percentage: 75
+            percentage: 75,
+            id: 5
         },
         {
             name: "SQL",
-            percentage: 55
+            percentage: 55,
+            id: 6
         },
     ]
 
@@ -51,33 +55,56 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
 
         {
             name: "ASP .NET Core Blazor",
-            percentage: 95
+            percentage: 95,
+            id: 7
         },
         {
             name: "React & React Native",
-            percentage: 83
+            percentage: 83,
+            id: 8
         },
         {
             name: "Angular",
-            percentage: 45
+            percentage: 45,
+            id: 9
         },
         {
             name: "ASP .NET Core Web API",
-            percentage: 80
+            percentage: 80,
+            id: 10
         },
         {
-            name: "Entity FrameWork",
-            percentage: 75
+            name: "Entity Framework",
+            percentage: 75,
+            id: 11
         },
         {
             name: "Git",
-            percentage: 77
+            percentage: 77,
+            id: 12
         },
         {
             name: "Docker",
-            percentage: 73
+            percentage: 73,
+            id: 13
         },
     ]
+
+    if(isSkillsVisible){
+        skillsVisible();
+        if(!progressAnimationPlayed.current){
+            console.log("playing progress animation");
+            const joinedSkillsArray = primarySkillsArray.concat(secondarySkillsArray);
+            joinedSkillsArray.forEach((skill) => {
+                const skillElement = document.getElementById(skill.id);
+                skillElement.style.width = `${skill.percentage}%`;
+            })
+            progressAnimationPlayed.current = true;
+        }
+    }
+    else{
+        skillsNotVisible();
+    }
 
     const primarySkillsArraySorted = sortArray(primarySkillsArray, {
         by: 'percentage',

@@ -1,12 +1,13 @@
 import "./SingleSkill.css";
 
-const SingleSkill = ({SkillObject}) => {
-    const {name, percentage} = SkillObject;
+const SingleSkill = ({SkillObject, playAnimationAtSkills}) => {
+    const {name, id} = SkillObject;
+
     return(
         <div className="skillItem">
             <span className="skillName">{name}</span>
             <div className="progressbar">
-                <div className="progress" style={{"width": `${percentage}%`}}></div>
+                <div className="progress" id={id}></div>
             </div>
         </div>
     )
