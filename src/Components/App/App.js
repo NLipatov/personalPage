@@ -6,6 +6,7 @@ import Skills from '../Skills/Skills';
 import Contacts from '../Contacts/Contacts';
 import useOnScreen from "../../Hooks/useOnScreen";
 import About from '../About/About';
+import Service from '../MyService/Service';
 
 const App = () => {
 
@@ -45,6 +46,7 @@ const App = () => {
       <Skills 
         skillsVisible={onSkillsVisible}
         skillsNotVisible={onSkillsNotVisible}/>
+      <Service/>
       <Contacts/>
 
     </div>
