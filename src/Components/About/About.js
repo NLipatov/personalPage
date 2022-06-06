@@ -3,9 +3,19 @@ import AboutPicture from "../../img/photo5463225416312535572.jpg";
 import useOnScreen from "../../Hooks/useOnScreen";
 import React, {useRef} from "react";
 
-const About = ({aboutVisible, aboutNotVisible}) => {
+const About = ({onAboutVisible, onAboutNotVisible}) => {
+    const ref = useRef();
+    const isAboutVisible = useOnScreen(ref);
+
+    if(isAboutVisible){
+        onAboutVisible();
+    }
+    else{
+        onAboutNotVisible();
+    }
+
     return ( 
-        <div className="About" id="about">
+        <div className="About visual_component" id="about" ref={ref}>
             <div style={{minWidth: '320px'}} className="PhotoContainer">
                 <img className="profilePicture aboutPhotoContainer" src={AboutPicture} alt={"Nikita Lipatov"}/>
             </div>

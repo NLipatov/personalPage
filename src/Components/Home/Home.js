@@ -8,25 +8,12 @@ import useOnScreen from "../../Hooks/useOnScreen";
 
 
 const Home = () => {
-    const ref = useRef();
-    const isHomeVisible = useOnScreen(ref);
-    const targetElement = document.getElementById("NavBarHomeLink");
-    if(isHomeVisible){
-        if(targetElement){
-            targetElement.style.color = "#BC8CF2";
-        }
-    }
-    else{
-        if(targetElement){
-            document.getElementById("NavBarHomeLink").style.color = "white";
-        }
-    }
 
     const userIcon = <FontAwesomeIcon icon={faUser} style={{fontSize: "21pt" }}/>
     const downArrowsIcon = <FontAwesomeIcon icon={faAngleDoubleDown} />
 
     return (
-        <div className="Home" id="home" ref={ref}>
+        <div className="Home visual_component" id="home">
             <div className="ShortInfo">
                 <span>
                     Hi there!

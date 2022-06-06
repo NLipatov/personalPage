@@ -7,26 +7,12 @@ import useOnScreen from "../../Hooks/useOnScreen";
 import React, { useRef } from "react";
 
 const Service = () => {
-    const ref = useRef();
-    const isServiceVisible = useOnScreen(ref);
-
-    const targetElement = document.getElementById("NavBarServiceLink");
-    if(isServiceVisible){
-        if(targetElement){
-            targetElement.style.color = "#BC8CF2";
-        }
-    }
-    else{
-        if(targetElement){
-            targetElement.style.color = "white";
-        }
-    }
 
 
     const briefcaseIcon = <FontAwesomeIcon icon={faBriefcase} />
     const chevronDownIcon = <FontAwesomeIcon icon={faChevronDown} />
     return(
-        <div className="Service" ref={ref} id="service">
+        <div className="Service visual_component" id="service">
             <Declarator DeclaratorValue={"Service"}/>
             <div className="workHistoryItem">
                 <span className="briefcaseIcon">

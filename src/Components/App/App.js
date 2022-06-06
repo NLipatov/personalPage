@@ -36,14 +36,76 @@ const App = () => {
     }
   };
 
+  const scrollPosition = useRef(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    scrollPosition.current = position;
+
+    nodeList = document.querySelectorAll(".visual_component");
+    nodes = Array.prototype.slice.call(nodeList, 0);
+
+    let offsetToHome = getScrolledOffsetFoLinkHeader("home");
+    let offsetToAbout = getScrolledOffsetFoLinkHeader("about") - 90;
+    let offsetToSkills = getScrolledOffsetFoLinkHeader("skills");
+    let offsetToService = getScrolledOffsetFoLinkHeader("service") - 90;
+
+    if(position >= offsetToHome && position < offsetToAbout) {
+      console.log("HOME")
+      document.getElementById("NavBarHomeLink").style.color = "#BC8CF2";
+
+      document.getElementById("NavBarAboutLink").style.color = "white";
+      document.getElementById("NavBarServiceLink").style.color = "white";
+    }
+    else{
+      if(position >= offsetToAbout && position < offsetToService) {
+        console.log("ABOUT")
+        document.getElementById("NavBarAboutLink").style.color = "#BC8CF2";
+
+        document.getElementById("NavBarHomeLink").style.color = "white";
+        document.getElementById("NavBarServiceLink").style.color = "white";
+      }
+      else{
+        console.log("Service")
+        document.getElementById("NavBarServiceLink").style.color = "#BC8CF2";
+
+        document.getElementById("NavBarHomeLink").style.color = "white";
+        document.getElementById("NavBarAboutLink").style.color = "white";
+      }
+    }
+  };
+
+  useEffect(() => {
+    if(window.pageYOffset === 0){
+      document.getElementById("NavBarHomeLink").style.color = "#BC8CF2";
+    }
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+    console.log('removing event listener')
+    window.removeEventListener("scroll", handleScroll);
+    }}, []);
+
+  let nodeList = document.querySelectorAll(".visual_component");
+  let nodes = Array.prototype.slice.call(nodeList, 0);
+
+  const getScrolledOffsetFoLinkHeader = (linkId) => {
+    let offsetValue = 0;
+    for (let i = 0; i < nodes.length; i++) {
+      if(nodes[i].id !== linkId){
+        offsetValue += nodes[i].offsetHeight;
+      }
+      else{
+        return offsetValue;
+      }
+    }
+  }
+
 
   return (
     <div className="App">
       <Header/>
       <Home/>     
-      <About
-        aboutVisible={onAboutVisible}
-        aboutNotVisible={onAboutNotVisible}/> 
+      <About onAboutVisible={onAboutVisible} onAboutNotVisible={onAboutNotVisible}/> 
       <Skills 
         skillsVisible={onSkillsVisible}
         skillsNotVisible={onSkillsNotVisible}/>

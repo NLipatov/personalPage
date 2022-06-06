@@ -91,9 +91,9 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
     const targetElement = document.getElementById("NavBarAboutLink")
     if(isSkillsVisible){
         skillsVisible();
-        if(targetElement){
-            targetElement.style.color = "#BC8CF2";
-        }
+        // if(targetElement){
+        //     targetElement.style.color = "#BC8CF2";
+        // }
         if(!progressAnimationPlayed.current){
             console.log("playing progress animation");
             const joinedSkillsArray = primarySkillsArray.concat(secondarySkillsArray);
@@ -106,9 +106,9 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
     }
     else{
         skillsNotVisible();
-        if(targetElement){
-            targetElement.style.color = "white";
-        }
+        // if(targetElement){
+        //     targetElement.style.color = "white";
+        // }
     }
 
     const primarySkillsArraySorted = sortArray(primarySkillsArray, {
