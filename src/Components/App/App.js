@@ -45,9 +45,9 @@ const App = () => {
     nodes = Array.prototype.slice.call(nodeList, 0);
 
     let offsetToHome = getScrolledOffsetFoLinkHeader("home");
-    let offsetToAbout = getScrolledOffsetFoLinkHeader("about") - 90;
+    let offsetToAbout = getScrolledOffsetFoLinkHeader("about") - 400;
     let offsetToSkills = getScrolledOffsetFoLinkHeader("skills");
-    let offsetToService = getScrolledOffsetFoLinkHeader("service") - 90;
+    let offsetToService = getScrolledOffsetFoLinkHeader("service") + 300;
 
     if(position >= offsetToHome && position < offsetToAbout) {
       console.log("HOME")

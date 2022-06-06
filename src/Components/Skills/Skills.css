@@ -1,11 +1,6 @@
 .Skills {
     height: auto;
     background: black;
-    padding: 10px;
-}
-
-.Skills > div {
-    padding-bottom: 30px;
 }
 
 .skillsList {

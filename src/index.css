@@ -52,3 +52,9 @@ body::-webkit-scrollbar-thumb {
   transform: translate3d(0px, -90vh, 0px);
     transition: all 700ms ease;
 }
+
+.photo {
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 0.5px solid white;
+}

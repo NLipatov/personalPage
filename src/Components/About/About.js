@@ -16,8 +16,8 @@ const About = ({onAboutVisible, onAboutNotVisible}) => {
 
     return ( 
         <div className="About visual_component" id="about" ref={ref}>
-            <div style={{minWidth: '320px'}} className="PhotoContainer">
-                <img className="profilePicture aboutPhotoContainer" src={AboutPicture} alt={"Nikita Lipatov"}/>
+            <div className="aboutPhotoContainer">
+                <img className="AboutPhoto photo" src={AboutPicture} alt={"Nikita Lipatov"}/>
             </div>
             <div className="TextContainer">
                 <h4>

@@ -58,7 +58,7 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
         {
             name: "React & React Native",
-            percentage: 83,
+            percentage: 77,
             id: 8
         },
         {
