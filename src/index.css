@@ -58,3 +58,7 @@ body::-webkit-scrollbar-thumb {
   border-bottom-right-radius: 25px;
   border: 0.5px solid white;
 }
+
+.briefcaseIcon {
+  z-index: 0;
+}

@@ -6,6 +6,7 @@ import Skills from '../Skills/Skills';
 import Contacts from '../Contacts/Contacts';
 import useOnScreen from "../../Hooks/useOnScreen";
 import About from '../About/About';
+import Experience from '../Experience/Experience';
 import Service from '../MyService/Service';
 
 const App = () => {
@@ -47,26 +48,26 @@ const App = () => {
     let offsetToHome = getScrolledOffsetFoLinkHeader("home");
     let offsetToAbout = getScrolledOffsetFoLinkHeader("about") - 400;
     let offsetToSkills = getScrolledOffsetFoLinkHeader("skills");
-    let offsetToService = getScrolledOffsetFoLinkHeader("service") + 300;
+    let offsetToExperience = getScrolledOffsetFoLinkHeader("experience") + 300;
 
     if(position >= offsetToHome && position < offsetToAbout) {
       console.log("HOME")
       document.getElementById("NavBarHomeLink").style.color = "#BC8CF2";
 
       document.getElementById("NavBarAboutLink").style.color = "white";
-      document.getElementById("NavBarServiceLink").style.color = "white";
+      document.getElementById("NavBarExperienceLink").style.color = "white";
     }
     else{
-      if(position >= offsetToAbout && position < offsetToService) {
+      if(position >= offsetToAbout && position < offsetToExperience) {
         console.log("ABOUT")
         document.getElementById("NavBarAboutLink").style.color = "#BC8CF2";
 
         document.getElementById("NavBarHomeLink").style.color = "white";
-        document.getElementById("NavBarServiceLink").style.color = "white";
+        document.getElementById("NavBarExperienceLink").style.color = "white";
       }
       else{
         console.log("Service")
-        document.getElementById("NavBarServiceLink").style.color = "#BC8CF2";
+        document.getElementById("NavBarExperienceLink").style.color = "#BC8CF2";
 
         document.getElementById("NavBarHomeLink").style.color = "white";
         document.getElementById("NavBarAboutLink").style.color = "white";
@@ -110,6 +111,7 @@ const App = () => {
       <Skills 
         skillsVisible={onSkillsVisible}
         skillsNotVisible={onSkillsNotVisible}/>
+      <Experience/>
       <Service/>
       <Contacts/>
 

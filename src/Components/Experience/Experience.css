@@ -1,0 +1,103 @@
+.Experience{
+    height: auto;
+    background-color: black;
+    padding: 30px;
+}
+
+.workHistoryItem {
+    border-left: #BC8CF2 5px solid;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.WorkHistoryCompanyBage {
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.DHLStyle {
+    color: #D40511;
+    background-color: #FFCC00;
+    font-family: Sabon;
+}
+
+.IKEAStyle {
+    color: #0058AB;
+    background-color:  #FBD914;
+    font-family: Sabon;
+    border: #0058AB 7px solid;
+    border-radius: 25%;
+}
+
+.AGroupStyle{
+    border: 2px solid white;
+}
+
+.AGroupStyle span::first-letter {
+    color: rgb(237, 204, 120);
+}
+
+.briefcaseIcon{
+    color: black;
+    font-size: 20pt;
+    position: absolute;
+    background-color: #BC8CF2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 5px;
+}
+
+.timePeriod {
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    margin-left: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.WorkHistoryDescription {
+    display: flex;
+    padding: 30px;
+    text-align: justify;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.WorkHistoryDescription h4{
+    color: #BC8CF2;
+}
+
+
+
+.WorkHistoryDescription h4::before{
+    content: "\"";
+    color: white;
+}
+
+.WorkHistoryDescription h4::after{
+    content: "\"";
+    color: white;
+}
+
+.chevronDownIcon {
+    display: flex;
+    margin-left: -11px;
+    font-size: 23pt;
+    font-weight: bold;
+    color: #BC8CF2;
+    position: absolute;
+    margin-top: -20px;
+}
