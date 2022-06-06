@@ -75,6 +75,7 @@ const App = () => {
   };
 
   useEffect(() => {
+
     if(window.pageYOffset === 0){
       document.getElementById("NavBarHomeLink").style.color = "#BC8CF2";
     }

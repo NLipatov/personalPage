@@ -5,12 +5,33 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import React, {useEffect, useState, useRef} from "react";
 import useOnScreen from "../../Hooks/useOnScreen";
-
+import Typed from "typed.js";
 
 const Home = () => {
 
     const userIcon = <FontAwesomeIcon icon={faUser} style={{fontSize: "21pt" }}/>
     const downArrowsIcon = <FontAwesomeIcon icon={faAngleDoubleDown} />
+
+	const el = React.useRef(null);
+    const typed = React.useRef(null);
+    useEffect(() => {
+        const options = {
+        strings: [
+            'Web Developer',
+            'Mobile Developer',
+            '...ehm little bit DevOps',
+            'passionate FullStack Developer'
+        ],
+        typeSpeed: 60,
+        backSpeed: 70,
+        };
+
+        typed.current = new Typed(el.current, options);
+        
+        return () => {
+        typed.current.destroy();
+        }
+    }, [])
 
     return (
         <div className="Home visual_component" id="home">
@@ -22,9 +43,7 @@ const Home = () => {
                     <span>
                         I'm a 
                     </span>
-                    <span>
-                        Web Developer
-                    </span>
+                    <span ref={el}/>
                 </div>
                 <span style={{fontSize: "11pt", marginTop: "10px"}}>
                         Creative Web Developer Offering 2+ Years Of Experience Providing High-Impact Web Solutions For Many Different Organizations.
