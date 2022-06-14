@@ -1,5 +1,4 @@
 import "./About.css";
-import AboutPicture from "../../img/aboutPicture.jpg";
 import useOnScreen from "../../Hooks/useOnScreen";
 import React, {useRef} from "react";
 
@@ -17,7 +16,7 @@ const About = ({onAboutVisible, onAboutNotVisible}) => {
     return ( 
         <div className="About visual_component" id="about" ref={ref}>
             <div className="aboutPhotoContainer">
-                <img className="AboutPhoto photo" src={AboutPicture} alt={"Nikita Lipatov"}/>
+                <img className="AboutPhoto photo" src={"https://i.ibb.co/h1Nm0Mk/IMG-1912.jpg"} alt={"Nikita Lipatov"}/>
             </div>
             <div className="TextContainer">
                 <h4>
