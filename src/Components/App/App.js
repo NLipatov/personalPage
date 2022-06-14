@@ -8,6 +8,7 @@ import useOnScreen from "../../Hooks/useOnScreen";
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Service from '../MyService/Service';
+import Portfolio from '../Portfolio/Portfolio';
 
 const App = () => {
 
@@ -114,7 +115,7 @@ const App = () => {
       <Experience/>
       <Service/>
       <Contacts/>
-
+      <Portfolio/>
     </div>
   );
 }
