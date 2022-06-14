@@ -2,3 +2,20 @@
     background-color: black;
     padding: 30px;
 }
+
+.PhotoCollage{
+    display: flex;
+    justify-content: center;
+}
+
+.css-8wgz7g{
+    fill: #BC8CF2 !important;
+}
+
+.css-m6j0xf{
+    color: rgba(188, 140, 242, 0.75) !important;
+}
+
+.css-1cm5myo{
+    max-width: 85% !important;
+}
