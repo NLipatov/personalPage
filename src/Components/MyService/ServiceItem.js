@@ -1,10 +1,15 @@
 import React from 'react';
 
-const ServiceItem = ({serviceIcon, skillName}) => {
+const ServiceItem = ({serviceIcon, skillName, description=""}) => {
     return (
-        <div>
-            {skillName}
-            {serviceIcon}
+        <div className="singleServiceItem">
+            <div className="declarationOfService">
+                <span>{skillName}</span>
+                <span>{serviceIcon}</span>
+            </div>
+            <div className="DescriptionOfService">
+                <span>{description}</span>
+            </div>
         </div>
     )
 

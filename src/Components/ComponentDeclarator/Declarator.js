@@ -1,9 +1,9 @@
 import "./Declarator.css";
 
-const Declarator = ({DeclaratorValue}) => {
+const Declarator = ({DeclaratorValue, DeclaratorName="My"}) => {
     return(
         <div className="declaratorRow">
-            <span>My</span>
+            <span>{DeclaratorName}</span>
             <span>{DeclaratorValue}</span>
         </div>
     )
