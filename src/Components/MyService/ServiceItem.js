@@ -1,9 +1,10 @@
 import React from 'react';
 
-const ServiceItem = ({userIcon}) => {
+const ServiceItem = ({serviceIcon, skillName}) => {
     return (
         <div>
-            {userIcon}
+            {skillName}
+            {serviceIcon}
         </div>
     )
 

@@ -1,5 +1,5 @@
 import "./About.css";
-import AboutPicture from "../../img/photo5463225416312535572.jpg";
+import AboutPicture from "../../img/aboutPicture.jpg";
 import useOnScreen from "../../Hooks/useOnScreen";
 import React, {useRef} from "react";
 

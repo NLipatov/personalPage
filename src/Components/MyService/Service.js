@@ -36,11 +36,18 @@ const Service = () => {
     return (
         <div className="ServiceDiv">
             <div className="ServiceItems">
-                {ServiceList.map((service) => {
-                    <ServiceItem userIcon={service.icon}/>
-                })}
+                {ServiceList.map((service) => 
+                    (<ServiceItem serviceIcon={service.icon} skillName={service.name}/>)
+                )}
             </div>
         </div>
+        // <div className="ServiceDiv">
+        //     <div className="ServiceItems">
+        //         {ServiceList.map((service) => {
+        //             <ServiceItem userIcon={service.icon}/>
+        //         })}
+        //     </div>
+        // </div>
     )
 
 }

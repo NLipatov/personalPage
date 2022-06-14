@@ -1,4 +1,5 @@
 .Contacts{
+    display: none;
     height: 600px;
     background-color: lightgreen;
 }

@@ -1,5 +1,5 @@
 import "./Home.css";
-import profilePicture from "../../img/photo5463225416312535627.jpg";
+import profilePicture from "../../img/HomePicture.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from "@fortawesome/free-solid-svg-icons";
