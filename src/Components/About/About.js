@@ -2,6 +2,7 @@ import "./About.css";
 import useOnScreen from "../../Hooks/useOnScreen";
 import React, {useRef} from "react";
 import Declarator from "../ComponentDeclarator/Declarator";
+import moment from "moment";
 
 const About = ({onAboutVisible, onAboutNotVisible}) => {
     const ref = useRef();
@@ -28,7 +29,9 @@ const About = ({onAboutVisible, onAboutNotVisible}) => {
                 </span>
                 <div className="BottomText">
                     <h4>
-                        Age: <span>24</span>
+                        Age: <span>
+                            {moment().diff('1997-08-25', 'years')}
+                        </span>
                     </h4>
                     <h4>
                         Language: <span>English, Russian</span>
