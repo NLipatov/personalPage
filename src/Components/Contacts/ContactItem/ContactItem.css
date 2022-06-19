@@ -1,0 +1,28 @@
+.ContactItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.ContactLogo{
+    width: 60px;
+}
+
+.ContactItemInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.ContactItemInfo a{
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.ContactItemInfo a:hover{
+    color: #BC8CF2;
+    text-decoration: none;
+}
+

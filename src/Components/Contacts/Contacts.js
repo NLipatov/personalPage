@@ -3,6 +3,7 @@ import Declarator from "../ComponentDeclarator/Declarator";
 import { faFacebook, faSkype, faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import ContactItem from "./ContactItem/ContactItem";
 
 const Contacts = () => {
     const telegramIcon = <FontAwesomeIcon icon={faTelegram} style={{fontSize: "43pt", color: "#229ED9"}}/>
@@ -22,31 +23,19 @@ const Contacts = () => {
                     <span>I am always open to job offers</span>
                     <span>Ready to relocate to almost any country in the world</span>
                 </div>
-                <div className="ContactItem">
-                    <span>
-                        Telegram:
-                    </span>
-                    <span>
-                        {telegramIcon} <a href="https://t.me/threeDollarBill">@threeDollarBill</a>
-                    </span>
-                </div>
-                <div className="ContactItem">
-                    <span>
-                        Skype:
-                    </span>
-                    <span>
-                        {skypeIcon} <a href="https://join.skype.com/invite/MZ0cwkcYg9i7">Start a chat with me</a>
-                    </span>
-                </div>
-                <div className="ContactItem">
-                    <span>
-                        Email:
-                    </span>
-                    <span>
-                        {emailIcon} <a href="mailto:6stringsohei@gmail.com">Send me a mail</a>
-                    </span>
-                    <span></span>
-                </div>
+                <ContactItem 
+                    icon={telegramIcon}
+                    link={"https://t.me/threeDollarBill"}
+                    linkText={"@threeDollarBill"}/>
+                <ContactItem 
+                    icon={skypeIcon}
+                    link={"https://join.skype.com/invite/MZ0cwkcYg9i7"}
+                    linkText={"Start a chat with me"}/>
+                <ContactItem 
+                    icon={emailIcon}
+                    link={"mailto:6stringsohei@gmail.com"}
+                    linkText={"Send me a mail"}
+                    additionalDescription={"6stringsohei@gmail.com"}/>
             </div>
         </div>
     )
