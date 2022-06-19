@@ -10,7 +10,7 @@ const Contacts = () => {
     const skypeIcon = <FontAwesomeIcon icon={faSkype} style={{fontSize: "43pt", color: "#00aff0"}}/>
     const emailIcon = <FontAwesomeIcon icon={faEnvelope} style={{fontSize: "43pt", color: "#BC8CF2"}}/>
     return(
-        <div className="Contacts">
+        <div className="Contacts" id="contact">
             <Declarator
                 DeclaratorValue={"Me"}
                 DeclaratorName={"Contact"}
