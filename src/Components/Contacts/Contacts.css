@@ -1,5 +1,53 @@
 .Contacts{
-    display: none;
     height: 600px;
-    background-color: lightgreen;
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.ContactDeclaration {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 1.5;
+}
+
+.ContactDeclaration span:nth-child(1){
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+.ContactsGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ContactItem{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.ContactItem span:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ContactItem a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.ContactItem a:hover{
+    text-decoration: none;
+    color: #BC8CF2;
+}
+
+.mailItemsDiv {
+    display: flex;
+    flex-direction: row;
 }

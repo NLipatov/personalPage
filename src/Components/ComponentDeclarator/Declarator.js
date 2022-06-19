@@ -1,11 +1,20 @@
 import "./Declarator.css";
 
-const Declarator = ({DeclaratorValue, DeclaratorName="My"}) => {
+const Declarator = ({DeclaratorValue, DeclaratorName="My", ReverseDeclaration=false}) => {
     return(
-        <div className="declaratorRow">
+        ReverseDeclaration ?(
+            <div className="declaratorRow">
+            <span></span>
             <span>{DeclaratorName}</span>
             <span>{DeclaratorValue}</span>
         </div>
+        ) :
+        (
+            <div className="declaratorRow">
+            <span>{DeclaratorName}</span>
+            <span>{DeclaratorValue}</span>
+        </div>
+        )
     )
 }
 

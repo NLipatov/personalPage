@@ -114,8 +114,8 @@ const App = () => {
         skillsNotVisible={onSkillsNotVisible}/>
       <Experience/>
       <Service/>
-      <Contacts/>
       <Portfolio/>
+      <Contacts/>
     </div>
   );
 }
