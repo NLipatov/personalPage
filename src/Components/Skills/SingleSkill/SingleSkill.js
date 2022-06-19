@@ -1,4 +1,5 @@
 import "./SingleSkill.css";
+import React from "react";
 
 const SingleSkill = ({SkillObject, playAnimationAtSkills}) => {
     const {name, id} = SkillObject;

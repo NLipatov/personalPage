@@ -1,4 +1,5 @@
 import "./ContactItem.css";
+import React from "react";
 
 const ContactItem = ({icon, link, linkText, additionalDescription}) => {
     return (

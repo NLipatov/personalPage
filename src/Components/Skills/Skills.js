@@ -1,6 +1,6 @@
 import "./Skills.css";
 import useOnScreen from "../../Hooks/useOnScreen";
-import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import Declarator from "../ComponentDeclarator/Declarator";
 import SingleSkill from "./SingleSkill/SingleSkill";
 import sortArray from 'sort-array';

@@ -4,6 +4,7 @@ import { faFacebook, faSkype, faTelegram } from "@fortawesome/free-brands-svg-ic
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import ContactItem from "./ContactItem/ContactItem";
+import React from "react";
 
 const Contacts = () => {
     const telegramIcon = <FontAwesomeIcon icon={faTelegram} style={{fontSize: "43pt", color: "#229ED9"}}/>

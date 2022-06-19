@@ -1,6 +1,7 @@
 import Declarator from "../ComponentDeclarator/Declarator";
 import "./Portfolio.css";
 import { ReactPhotoCollage } from "react-photo-collage";
+import React from "react";
 
 const setting = {
     width: '70%',

@@ -1,4 +1,5 @@
 import "./Declarator.css";
+import React from "react";
 
 const Declarator = ({DeclaratorValue, DeclaratorName="My", ReverseDeclaration=false}) => {
     return(
