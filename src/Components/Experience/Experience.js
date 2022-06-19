@@ -19,7 +19,7 @@ const Experience = () => {
                     {briefcaseIcon}
                 </span>
                 <div className="timePeriod">
-                    <span>2020 - 2021</span>
+                    <span>06/2020 - 06/2021</span>
                 </div>
                 <div className="WorkHistoryCompanyBage DHLStyle">
                     <span>DHL Express</span>
@@ -44,7 +44,7 @@ const Experience = () => {
                     {briefcaseIcon}
                 </span>
                 <div className="timePeriod">
-                    <span>2021 - 2021</span>
+                    <span>06/2021 - 09/2021</span>
                 </div>
                 <div className="WorkHistoryCompanyBage IKEAStyle">
                     <span>IKEA</span>
@@ -69,7 +69,7 @@ const Experience = () => {
                     {briefcaseIcon}
                 </span>
                 <div className="timePeriod">
-                    <span>2021 - 2022</span>
+                    <span>09/2021 - 06/2022</span>
                 </div>
                 <div className="WorkHistoryCompanyBage AGroupStyle">
                     <span>A Group</span>
@@ -86,6 +86,37 @@ const Experience = () => {
                     </span>
                     <span>
                         Six months after the start of my work, terrible events began, which still shake the world community and take the lives of hundreds of people every day. Because of these events, I started looking for a remote job that would allow me to relocate to another country. All my childhood, school, university times have been overshadowed by the terrible deeds of my country. It was unbearably disgusting to stay here
+                    </span>
+                </div>
+            </div>
+            <div className="workHistoryItem">
+                <span className="briefcaseIcon">
+                    {briefcaseIcon}
+                </span>
+                <div className="timePeriod">
+                    <span>since 06/2022</span>
+                </div>
+                <div className="WorkHistoryCompanyBage">
+                    <div className="DynamicSunStyle">
+                        <span>DynamicSun</span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+                <div className="WorkHistoryDescription">
+                    <h4>
+                        My first completely remote job. Silence and the absence of distractions...
+                    </h4>
+                    <span>
+                        DynamicSun — is an small IT company that offers software development as a service (SaaS).
+                    </span>
+                    <span>
+                        Since this company is developing several products for several other companies, the technology stack here is much wider than in the previous places. It was a huge positive moment for me. A wider stack means more technologies that I can work with.
+                    </span>
+                    <span>
+                        When I was working in the office, I was greatly distracted by other people's conversations and other usual office activity. Silence and the absence of distractions - that's what I wanted and that's what I got.
                     </span>
                 </div>
             </div>
