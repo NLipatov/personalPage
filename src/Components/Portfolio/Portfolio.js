@@ -16,7 +16,7 @@ const setting = {
 
 const Portfolio = () => {
     return (
-        <div className="PortfolioSection" id="portfolio">
+        <div className="PortfolioSection visual_component" id="portfolio">
             <Declarator DeclaratorValue={"Portfolio"}/>
             <div className="PhotoCollage">
                 <ReactPhotoCollage {...setting} />

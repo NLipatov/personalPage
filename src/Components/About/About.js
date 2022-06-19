@@ -1,6 +1,7 @@
 import "./About.css";
 import useOnScreen from "../../Hooks/useOnScreen";
 import React, {useRef} from "react";
+import Declarator from "../ComponentDeclarator/Declarator";
 
 const About = ({onAboutVisible, onAboutNotVisible}) => {
     const ref = useRef();
