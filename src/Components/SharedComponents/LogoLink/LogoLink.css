@@ -1,0 +1,27 @@
+.LogoItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.LogoIcon{
+    width: 60px;
+}
+
+.LogoItemInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.LogoItemInfo a{
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.LogoItemInfo a:hover{
+    color: #BC8CF2;
+    text-decoration: none;
+}

@@ -1,0 +1,58 @@
+.PortfolioItem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ItemCodeLink{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ItemCodeLink a{
+    text-decoration: none;
+    color: #BC8CF2;
+}
+
+.PortfolioItemFooter{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.itemCategory{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(44, 44, 45);
+    width: fit-content;
+    padding: 10px;
+    font-size: 10pt;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ItemDeclaration{
+    display: flex;
+    gap: 10px;
+}
+
+.DeclarationText{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+}
+
+.ItemDescription{
+    text-align: justify;
+}
+
+.FeaturesUL {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}

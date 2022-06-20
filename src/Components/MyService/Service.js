@@ -1,5 +1,4 @@
 import "./Service.css";
-import React from "react";
 import ServiceItem from "./ServiceItem";
 import Declarator from "../ComponentDeclarator/Declarator";
 import { faUser } from "@fortawesome/free-solid-svg-icons";

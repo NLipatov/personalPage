@@ -1,10 +1,10 @@
 import "./Contacts.css";
 import Declarator from "../ComponentDeclarator/Declarator";
-import { faFacebook, faSkype, faTelegram } from "@fortawesome/free-brands-svg-icons"
+import { faSkype, faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import ContactItem from "./ContactItem/ContactItem";
-import React from "react";
+import LogoItem from ".././SharedComponents/LogoLink/LogoLink";
 
 const Contacts = () => {
     const telegramIcon = <FontAwesomeIcon icon={faTelegram} style={{fontSize: "43pt", color: "#229ED9"}}/>
@@ -24,15 +24,15 @@ const Contacts = () => {
                     <span>I am always open to job offers</span>
                     <span>Ready to relocate to almost any country in the world</span>
                 </div>
-                <ContactItem 
+                <LogoItem 
                     icon={telegramIcon}
                     link={"https://t.me/threeDollarBill"}
                     linkText={"@threeDollarBill"}/>
-                <ContactItem 
+                <LogoItem 
                     icon={skypeIcon}
                     link={"https://join.skype.com/invite/MZ0cwkcYg9i7"}
                     linkText={"Start a chat with me"}/>
-                <ContactItem 
+                <LogoItem 
                     icon={emailIcon}
                     link={"mailto:6stringsohei@gmail.com"}
                     linkText={"Send me a mail"}
