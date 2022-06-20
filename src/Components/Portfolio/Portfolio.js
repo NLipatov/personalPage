@@ -64,7 +64,9 @@ const Portfolio = () => {
             {/* <div className="PhotoCollage">
                 <ReactPhotoCollage {...setting} />
             </div> */}
-            <Carousel>
+            <Carousel
+                autoPlaySpeed={3000}
+                showArrows={false}>
                 {items.map(item => item)}
             </Carousel>
             {/* <PortfolioItem 
