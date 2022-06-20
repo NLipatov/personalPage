@@ -35,3 +35,50 @@
     text-decoration: none;
     color: white;
 }
+
+.CrossNavBar{
+    margin-top: -10px;
+    display: none;
+    transition: all 0.3s ease;
+    transform: rotate(180deg);
+}
+
+.CrossNavBar span:nth-child(1){
+    width: 2px;
+    height: 25px;
+    background-color: white;
+    margin-left: auto;
+    transform: rotate(90deg);
+}
+
+.CrossNavBar span:nth-child(2){
+    width: 2px;
+    height: 25px;
+    background-color: white;
+    margin-left: auto;
+    margin-left: -2px;
+    transition: all 0.3s ease;
+    transform: rotate(90deg);
+    margin-top: -10px;
+}
+
+.CrossNavBar span:nth-child(3){
+    width: 2px;
+    height: 25px;
+    background-color: white;
+    margin-left: -2px;
+    transition: all 0.3s ease;
+    transform: rotate(90deg);
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .NavBar {
+        display: none;
+    }
+    .CrossNavBar{
+        display: flex;
+        width: auto;
+        margin-left: auto;
+    }
+}
