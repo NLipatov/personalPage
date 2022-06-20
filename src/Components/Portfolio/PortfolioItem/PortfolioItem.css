@@ -17,10 +17,12 @@
 }
 
 .PortfolioItemFooter{
-    width: 100%;
+    width: 80%;
     height: 2px;
     background-color: white;
     margin-bottom: 10px;
+    display: flex;
+    align-self: center;
 }
 
 .itemCategory{
@@ -38,6 +40,11 @@
 .ItemDeclaration{
     display: flex;
     gap: 10px;
+    padding: 10px;
+}
+
+li::marker {
+    color: #BC8CF2;
 }
 
 .DeclarationText{
@@ -61,4 +68,11 @@
 .FooterLinks{
     display: flex;
     gap: 10px;
+    align-self: center;
+}
+
+.PortfolioItemDescription{
+    min-height: 450px;
+    width: 80%;
+    align-self: center;
 }

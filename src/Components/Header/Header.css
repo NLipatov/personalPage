@@ -9,7 +9,7 @@
     align-items: center;
     gap: 10px;
     height: 30px;
-    z-index: 1;
+    z-index: 2;
 }
 .HeaderContent{
     display: flex;
@@ -72,6 +72,34 @@
     margin-top: 10px;
 }
 
+.NavBarScreen{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    margin-left: 100vw;
+    transition: all 1s ease;
+    background-color: rgba(0, 0, 0, 0.81);
+    z-index: 1;
+    backdrop-filter: blur(1.5px);
+}
+
+.NavBarScreenLinksDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+}
+
+.NavBarScreenLinksDiv a {
+    text-decoration: none;
+    color: white;
+    font-size: 23pt;
+}
+
 @media screen and (max-width: 650px) {
     .NavBar {
         display: none;
@@ -80,5 +108,8 @@
         display: flex;
         width: auto;
         margin-left: auto;
+    }
+    .Experience{
+        padding-right: 5px !important;
     }
 }
