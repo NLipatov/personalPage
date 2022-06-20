@@ -42,9 +42,9 @@
 .DeclarationText{
     display: flex;
     align-self: center;
-    width: 100%;
+    /* width: 100%;
     justify-content: center;
-    position: absolute;
+    position: absolute; */
 }
 
 .ItemDescription{
@@ -55,4 +55,9 @@
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.FooterLinks{
+    display: flex;
+    gap: 10px;
 }

@@ -3,6 +3,7 @@ import "./PortfolioItem.css";
 import { ReactPhotoCollage } from "react-photo-collage";
 import LogoItem from "../../SharedComponents/LogoLink/LogoLink";
 
+
 // const setting = {
 //     width: '70%',
 //     height: ['450px', '270px'],
@@ -15,7 +16,7 @@ import LogoItem from "../../SharedComponents/LogoLink/LogoLink";
 //     showNumOfRemainingPhotos: true
 //   };
 
-const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, itemCategoryIcon, itemCategoryText, featuresDescriptionArray}) => {
+const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, itemCategoryIcon, itemCategoryText, featuresDescriptionArray, demoIcon, demoLink}) => {
     return( 
         <div className="PortfolioItem">
             <div className="ItemDeclaration">
@@ -56,10 +57,19 @@ const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, ite
                 </ul>
             </div>
             <span className="PortfolioItemFooter"/>
-            <LogoItem
-                icon={icon}
-                link={SourceCodeLink}
-                linkText={"Source Code"}/>
+            <div className="FooterLinks">
+                <LogoItem
+                    icon={icon}
+                    link={SourceCodeLink}
+                    linkText={"Source Code"}/>
+                {demoIcon != undefined ? 
+                    <LogoItem
+                    icon={demoIcon}
+                    link={demoLink}
+                    linkText={"Live Demo"}/>
+                    :
+                    null}
+            </div>
         </div>
     )
 }
