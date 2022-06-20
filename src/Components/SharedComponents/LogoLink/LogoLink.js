@@ -5,7 +5,9 @@ const LogoLink = ({icon, link, linkText, additionalDescription}) => {
     return (
         <div className="LogoItem">
             <span className="LogoIcon">
-                {icon}
+                <a href={link}>
+                    {icon}
+                </a>
             </span>
             <div className="LogoItemInfo">
                 <a href={link}>

@@ -62,7 +62,7 @@ const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, ite
                     icon={icon}
                     link={SourceCodeLink}
                     linkText={"Source Code"}/>
-                {demoIcon != undefined ? 
+                {demoIcon !== undefined ? 
                     <LogoItem
                     icon={demoIcon}
                     link={demoLink}
