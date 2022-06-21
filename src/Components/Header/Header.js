@@ -8,7 +8,8 @@ const Header = () => {
             document.querySelectorAll(".CrossNavBar span")[0].style.display = "none";
             document.querySelectorAll(".CrossNavBar span")[1].style.transform = "rotate(45deg)";
             document.querySelectorAll(".CrossNavBar span")[2].style.transform = "rotate(-45deg)";
-            document.querySelectorAll(".CrossNavBar span")[2].style.marginTop = "-10px";
+            document.querySelectorAll(".CrossNavBar span")[1].style.marginTop = "0px";
+            document.querySelectorAll(".CrossNavBar span")[2].style.marginTop = "0px";
             document.querySelector(".NavBarScreen").style.marginLeft = "0vw";
             document.querySelector("body").style.overflow = "hidden"
             crossAnimationPlayed = true;
@@ -17,6 +18,7 @@ const Header = () => {
             document.querySelectorAll(".CrossNavBar span")[0].style.display = "";
             document.querySelectorAll(".CrossNavBar span")[1].style.transform = "rotate(90deg)";
             document.querySelectorAll(".CrossNavBar span")[2].style.transform = "rotate(90deg)";
+            document.querySelectorAll(".CrossNavBar span")[1].style.marginTop = "-10px";
             document.querySelectorAll(".CrossNavBar span")[2].style.marginTop = "10px";
             document.querySelector(".NavBarScreen").style.marginLeft = "100vw";
             document.querySelector("body").style.overflow = "auto";
