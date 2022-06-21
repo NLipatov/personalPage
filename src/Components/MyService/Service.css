@@ -38,6 +38,10 @@
     gap: 10px;
 }
 
+.workHistoryItem span svg{
+    font-size: 20pt !important;
+}
+
 .DescriptionOfService{
     font-size: 11pt;
     padding-left: 10px;
