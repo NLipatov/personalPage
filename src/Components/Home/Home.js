@@ -45,8 +45,8 @@ const Home = () => {
                     </span>
                     <span ref={el}/>
                 </div>
-                <span style={{fontSize: "11pt", marginTop: "10px"}}>
-                        Creative Web Developer Offering 2+ Years Of Experience Providing High-Impact Web Solutions For Many Different Organizations.
+                <span className="HomeBriefBio">
+                        I'm a Creative Web Developer Offering 2+ Years Of Experience Providing High-Impact Web Solutions For Many Different Organizations.
                 </span>
                 <a href="#about" className="btn">
                     More info about me

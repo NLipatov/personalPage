@@ -1,6 +1,6 @@
 .skillItem {
     color: white;
-    width: 400px;
+    width: 40vw;
     height: 70px;
 }
 
@@ -25,4 +25,14 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
+}
+
+@media screen and (max-width: 650px){
+    .skillItem{
+        width: calc(100vw - 40px);
+        height: 90px;
+    }
+    .techStack{
+        gap: 0px;
+    }
 }

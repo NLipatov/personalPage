@@ -19,7 +19,7 @@ const Contacts = () => {
             <div className="ContactsGroup">
                 <div className="ContactDeclaration">
                     <span>
-                        Get in touch
+                        Get in touch with me!
                     </span>
                     <span>I am always open to job offers</span>
                     <span>Ready to relocate to almost any country in the world</span>

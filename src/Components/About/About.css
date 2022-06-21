@@ -40,3 +40,18 @@ body{
 .TextContainer h4 span {
     color: #BC8CF2;
 }
+
+@media screen and (max-width: 650px){
+    .aboutPhotoContainer {
+        display: none;
+    }
+    .About{
+        padding: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .TextContainer{
+        width: 100%;
+        font-size: 15pt;
+    }
+}

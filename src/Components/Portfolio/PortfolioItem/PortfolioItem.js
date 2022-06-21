@@ -40,7 +40,7 @@ const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, ite
                 <span className="ItemDescription">
                     {Text}
                 </span>
-                <span>
+                <span className="FeaturesDeclarator">
                     This project Features:
                 </span>
                 <div className="ItemFeatures">

@@ -161,3 +161,33 @@
     position: absolute;
     margin-top: -20px;
 }
+
+@media screen and (max-width: 650px){
+    .Experience {
+        font-size: 15pt;
+        padding: 20px;
+    }
+    .timePeriod{
+        font-size: 15pt;
+        padding-bottom: 10px;
+    }
+    .WorkHistoryDescription{
+        padding-top: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+        gap: 15px;
+    }
+    .WorkHistoryDescription h4{
+        margin-top: 0px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+    }
+    .briefcaseIcon{
+        left: 1px;
+        margin-top: -3px;
+    } 
+    .chevronDownIcon{
+        margin-left: -10.7px;
+    }
+}

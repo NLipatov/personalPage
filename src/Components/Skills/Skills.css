@@ -11,5 +11,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 650px){
+    .Skills{
+        padding: 20px;
+        font-size: 15pt;
+    }
 }

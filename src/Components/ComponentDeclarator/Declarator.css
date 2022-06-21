@@ -21,3 +21,9 @@
     margin-top: 35pt;
     margin-left: 10px;
 }
+
+@media screen and (max-width: 650px){
+    .declaratorRow{
+        font-size: 25pt;
+    }
+}

@@ -15,6 +15,10 @@
     padding: 10px;
 }
 
+.introduction{
+    height: 230px;
+}
+
 .introduction span:nth-child(2){
     color: #BC8CF2;
 }
@@ -35,7 +39,44 @@
 }
 
 .profilePicture{
-    max-width: 20vw;
+    width: 70%;
+}
+
+/* @media screen and (max-width: 1026px) {
+    .profilePicture{
+        width: 60%;
+    }
+} */
+
+.HomeBriefBio{
+    font-size: 11pt;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .Home{
+        flex-direction: column-reverse;
+        padding-top: 0px;
+        padding: 20px;
+        justify-content: start;
+        padding-top: 50px;
+    }
+    .ShortInfo{
+        width: 100%;
+        font-size: 25pt;
+    }
+    .introduction{
+        height: 130px;
+    }
+    .btn{
+        width: 80vw;
+        position: absolute;
+        bottom: 100px;
+        align-self: center;
+    }
+    .HomeBriefBio{
+        font-size: 15pt;
+    }
 }
 
 .downArrowsDiv{
