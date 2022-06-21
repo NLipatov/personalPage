@@ -41,6 +41,7 @@
     display: flex;
     gap: 10px;
     padding: 10px;
+    padding-bottom: 15px;
 }
 
 li::marker {
@@ -57,6 +58,8 @@ li::marker {
 
 .ItemDescription{
     text-align: justify;
+    display: flex;
+    padding-bottom: 15px;
 }
 
 .FeaturesUL {
@@ -71,8 +74,14 @@ li::marker {
     align-self: center;
 }
 
+.FeaturesDeclarator{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
 .PortfolioItemDescription{
-    min-height: 450px;
+    height: 500px;
     width: 80%;
     align-self: center;
 }
@@ -86,11 +95,6 @@ li::marker {
     }
     .ItemDescription{
         display: flex;
-        padding-bottom: 15px;
-    }
-    .FeaturesDeclarator{
-        display: flex;
-        justify-content: center;
         padding-bottom: 15px;
     }
     .svg-inline--fa {
