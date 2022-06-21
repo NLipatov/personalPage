@@ -21,6 +21,9 @@
     max-width: 85% !important;
 }
 
-.kxOrkG {
+.rec-dot {
     background-color: white !important;
+}
+.rec-dot_active{
+    background-color: #BC8CF2 !important;
 }
