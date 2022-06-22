@@ -32,10 +32,10 @@ const Experience = () => {
                         From the very first days of work, I began to notice that most of the work can be automated.
                     </span>
                     <span>
-                        I started learning programming and after a few weeks I wrote a Python application with 2 Threads: one for graphical user interface and other for controlling headless Chrome with Selenium library.
+                        I started learning programming and after a few weeks I wrote a Python application. My first application was a multithreading app: one thread was handling graphical user interface and other was handling headless Chrome with Selenium library.
                     </span>
                     <span>
-                        After my first successful experience, I started looking for a job where I would find even more opportunities for my professional development.
+                        After my first successful experience, I've started looking for a job where I would find even more opportunities for my professional development.
                     </span>
                 </div>
             </div>
@@ -51,13 +51,16 @@ const Experience = () => {
                 </div>
                 <div className="WorkHistoryDescription">
                     <h4>
-                        IKEA — gorgeous people, great working culture and constant feeling of care from the employer
+                        IKEA — very kind people, great working culture and constant feeling of care from the employer
                     </h4>
                     <span>
                         At IKEA, I participated in the architecture discussion and development of several projects.
                     </span>
                     <span>
-                        Although I really liked the relationships in the team and the attitude of the employer to the team, I was not satisfied with the level of complexity of the work I was doing. It was too easy for me...
+                        I worked at IKEA Esipovo Distribution Center. This place was the center of the company's logistics activities in Russia. The geography of our activity was tremendous, our team's task was the availability of goods in all stores of the country. My task was to automate the forecasting of the distribution center's load, the number of vehicles needed, and so on. 
+                    </span>
+                    <span>
+                        Although I really liked the relationships in the team and the attitude of the employer to each member of the team, I was not satisfied with the level of complexity of the work I was doing. I was a manager with programming knowledge.  It was too easy and boring for me...
                     </span>
                     <span>
                         I became interested in web development. I started learning C#. I began to learn how the web works. Soon I received a very tempting and interesting offer
@@ -76,7 +79,7 @@ const Experience = () => {
                 </div>
                 <div className="WorkHistoryDescription">
                     <h4>
-                        It was it. The job I was dreamed of for past 2 year!
+                        This was my first job job experience in IT. And I really liked it
                     </h4>
                     <span>
                         In A Group we had a small development team of 5 people. All the guys except me had more than 10 years of programming experience. They all were like demigods from my perspective.
@@ -85,7 +88,13 @@ const Experience = () => {
                         Absolutely everything that I have been studying for the last six months was necessary for me when working at this place. And it wasn't even enough! I eagerly read and studied new technologies.
                     </span>
                     <span>
-                        Six months after the start of my work, terrible events began, which still shake the world community and take the lives of hundreds of people every day. Because of these events, I started looking for a remote job that would allow me to relocate to another country. All my childhood, school, university times have been overshadowed by the terrible deeds of my country. It was unbearably disgusting to stay here
+                        Over time, I began to notice the negative aspects of working in this company. For example, we didn't have a code review. It is very important for a novice programmer to hear feedback from an experienced colleague.  I have been developing my project from scratch, from the development of the database schema, all tables, constraints, and so on, to the backend and frontend. No Merge Request, just me alone on my project.
+                    </span>
+                    <span>
+                        On the one hand, I liked that I didn't waste time coordinating my code with a more experienced person. On the other hand, I understood that this could lead to an abundance of bad practices in my code. I started looking for information about how programmers should approach the architecture of their projects.
+                    </span>
+                    <span>
+                    In addition, working in the office you are constantly distracted by the activity of colleagues. Talking, walking people and so on distracts from work. My office was 80 km from my house. I spent 4-6 hours a day on the road. It was exhausting.
                     </span>
                 </div>
             </div>
@@ -107,16 +116,19 @@ const Experience = () => {
                 </div>
                 <div className="WorkHistoryDescription">
                     <h4>
-                        My first completely remote job. Silence and the absence of distractions...
+                        My first completely remote job.
                     </h4>
                     <span>
                         DynamicSun — is an small IT company that offers software development as a service (SaaS).
                     </span>
                     <span>
+                        This place was devoid of the shortcomings described in the history earlier. Code review, discussion with colleagues on how and what exactly can be done better, and so on.
+                    </span>
+                    <span>
                         Since this company is developing several products for several other companies, the technology stack here is much wider than in the previous places. It was a huge positive moment for me. A wider stack means more technologies that I can work with.
                     </span>
                     <span>
-                        When I was working in the office, I was greatly distracted by other people's conversations and other usual office activity. Silence and the absence of distractions - that's what I wanted and that's what I got.
+                        When I was working in the office, I was greatly distracted by other people's conversations and other usual office activity. Silence and the absence of distractions - that's what I wanted from remote job and that's what I got.
                     </span>
                 </div>
             </div>

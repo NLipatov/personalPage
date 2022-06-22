@@ -28,7 +28,7 @@ const Service = () => {
         {
             name: "Database Engineering",
             icon: databaseIcon,
-            description: "I have some experience with PostgreSQL and EF"
+            description: "I have hands on experience with PostgreSQL and Entity Framework"
         },
         {
             name: "DevOps",
@@ -39,7 +39,7 @@ const Service = () => {
     ]
     return (
         <div className="ServiceDiv">
-            <Declarator DeclaratorName="What can I" DeclaratorValue={"Offer?"}/>
+            <Declarator DeclaratorName="So what can I" DeclaratorValue={"Offer?"}/>
             <div className="ServiceItems">
                 {ServiceList.map((service) => 
                     (<ServiceItem 

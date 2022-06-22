@@ -25,7 +25,7 @@ const About = ({onAboutVisible, onAboutNotVisible}) => {
                     My name is <span>Nikita</span>
                 </h4>
                 <span>
-                    I'm a fullstack web developer. My first application was a desktop software for searching an unique taxpayer ID in open government tax service web-site.
+                    I do both frontend and backend development. I really love my occupation and therefore practice my programming skills every day. I am focused on my professional development and I will be happy to solve problems of any level of complexity for your business.
                 </span>
                 <div className="BottomText">
                     <h4>
