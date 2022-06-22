@@ -5,6 +5,7 @@ const Header = () => {
     let crossAnimationPlayed = false;
     const onCrossNavBarClick = () => {
         if(!crossAnimationPlayed){
+            document.querySelector(".NavBarScreen").style.opacity = 1;
             document.querySelectorAll(".CrossNavBar span")[0].style.display = "none";
             document.querySelectorAll(".CrossNavBar span")[1].style.transform = "rotate(45deg)";
             document.querySelectorAll(".CrossNavBar span")[2].style.transform = "rotate(-45deg)";
@@ -15,6 +16,7 @@ const Header = () => {
             crossAnimationPlayed = true;
         }
         else{
+            document.querySelector(".NavBarScreen").style.opacity = 0;
             document.querySelectorAll(".CrossNavBar span")[0].style.display = "";
             document.querySelectorAll(".CrossNavBar span")[1].style.transform = "rotate(90deg)";
             document.querySelectorAll(".CrossNavBar span")[2].style.transform = "rotate(90deg)";
