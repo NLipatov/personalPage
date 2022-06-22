@@ -10,9 +10,11 @@
 
 .declaratorRow span:nth-child(2){
     color: #BC8CF2;
+    padding-bottom: 5px;
+    border-bottom: 2px solid#BC8CF2;
 }
 
-.declaratorRow span:nth-child(2)::before{
+/* .declaratorRow span:nth-child(2)::before{
     content: '';
     height: 2.5px;
     width: 100px;
@@ -20,7 +22,7 @@
     position: absolute;
     margin-top: 35pt;
     margin-left: 10px;
-}
+} */
 
 @media screen and (max-width: 650px){
     .declaratorRow{

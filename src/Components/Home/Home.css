@@ -1,6 +1,7 @@
 .Home{
     background-color: black;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     color: white;
     display: flex;
     align-items: center;
@@ -50,7 +51,6 @@
 
 .HomeBriefBio{
     font-size: 11pt;
-    padding-top: 10px;
 }
 
 @media screen and (max-width: 650px) {
@@ -58,24 +58,33 @@
         flex-direction: column-reverse;
         padding-top: 0px;
         padding: 20px;
-        justify-content: start;
         padding-top: 50px;
+        justify-content: start;
     }
     .ShortInfo{
         width: 100%;
         font-size: 25pt;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
     .introduction{
         height: 130px;
     }
     .btn{
         width: 80vw;
-        position: absolute;
         bottom: 70px;
         align-self: center;
     }
     .HomeBriefBio{
         font-size: 15pt;
+        height: 130px;
+    }
+}
+
+@media screen and (max-height: 750px){
+    .downArrowsDiv{
+        display: none;
     }
 }
 

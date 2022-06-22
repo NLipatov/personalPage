@@ -38,6 +38,11 @@
     gap: 10px;
 }
 
+.declarationOfService span{
+    display: flex;
+    align-items: center;
+}
+
 .workHistoryItem span svg{
     font-size: 20pt !important;
 }
