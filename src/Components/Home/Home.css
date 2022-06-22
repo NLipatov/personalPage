@@ -17,7 +17,8 @@
 }
 
 .introduction{
-    height: 230px;
+    height: auto;
+    min-height: 230px;
 }
 
 .introduction span:nth-child(2){
@@ -69,7 +70,8 @@
         gap: 10px;
     }
     .introduction{
-        height: 130px;
+        height: auto;
+        min-height: 130px;
     }
     .btn{
         width: 80vw;
@@ -78,7 +80,8 @@
     }
     .HomeBriefBio{
         font-size: 15pt;
-        height: 130px;
+        height: auto;
+        min-height: 130px;
     }
 }
 
