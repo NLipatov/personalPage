@@ -7,6 +7,12 @@
     align-items: center;
     padding-bottom: 10px;
 }
+
+.HomeLight{
+    background-color: white;
+    color: black;
+}
+
 .ShortInfo {
     font-size: 30pt;
     display: flex;

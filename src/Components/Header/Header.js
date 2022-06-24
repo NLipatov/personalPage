@@ -1,5 +1,7 @@
 import "./Header.css";
 import NavBarScreen from "./NavBarScreen";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
     let crossAnimationPlayed = false;
@@ -28,6 +30,15 @@ const Header = () => {
         }
 
     };
+    const sunIcon = <FontAwesomeIcon icon={faSun} style={{color: "black", fontSize: "12pt"}}/>
+    const moonIcon = <FontAwesomeIcon icon={faMoon} style={{color: "black", fontSize: "12pt"}}/>
+    const toggleIconSpanActive = () =>{
+        document.querySelector(".iconSpan").classList.toggle("_iconSpanActive");
+        document.querySelector(".darkThemeToggler").classList.toggle("_darkThemeTogglerAcive");
+
+        document.querySelector(".Home").classList.toggle("HomeLight");
+    } 
+
     return(
         <>
             <div className="Header">
@@ -35,7 +46,13 @@ const Header = () => {
                     <span className="Name">
                         NIKITA
                     </span>
+
                     <div className="NavBar">
+                        <div className="darkThemeToggler" onClick={toggleIconSpanActive}>
+                            <span className="iconSpan">
+                                
+                            </span>
+                        </div>
                         <a href="#home" id="NavBarHomeLink">Home</a>
                         <a href="#about" id="NavBarAboutLink">About</a>
                         <a href="#experience" id="NavBarExperienceLink">Experience</a>
