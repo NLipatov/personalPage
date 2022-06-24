@@ -18,7 +18,7 @@ body{
     justify-content: center;
 }
 .AboutPhoto {
-    width: 100%;
+    width: 50%;
     max-width: 30vw;
 }
 .TextContainer{
