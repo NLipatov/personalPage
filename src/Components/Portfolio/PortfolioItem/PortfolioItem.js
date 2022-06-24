@@ -3,19 +3,6 @@ import "./PortfolioItem.css";
 import { ReactPhotoCollage } from "react-photo-collage";
 import LogoItem from "../../SharedComponents/LogoLink/LogoLink";
 
-
-// const setting = {
-//     width: '70%',
-//     height: ['450px', '270px'],
-//     layout: [1, 4],
-//     photos: [
-//       { source: 'https://i.ibb.co/dWW4Qmt/Screenshot-2022-06-14-134708.png' },
-//       { source: 'https://i.ibb.co/McLfY5V/Screenshot-2022-06-14-134708.png' },
-//       { source: 'https://i.ibb.co/CV47YJk/Screenshot-2022-06-14-134708.png' },
-//     ],
-//     showNumOfRemainingPhotos: true
-//   };
-
 const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, itemCategoryIcon, itemCategoryText, featuresDescriptionArray, demoIcon, demoLink}) => {
     return( 
         <div className="PortfolioItem">

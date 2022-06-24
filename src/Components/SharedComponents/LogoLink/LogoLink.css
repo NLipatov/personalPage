@@ -10,10 +10,6 @@
     transition: all .2s ease;
 }
 
-/* .LogoIcon svg:hover{
-    color: #BC8CF2 !important;
-} */
-
 .LogoItemInfo{
     display: flex;
     flex-direction: column;

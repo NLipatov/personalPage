@@ -2,29 +2,15 @@ import Declarator from "../ComponentDeclarator/Declarator";
 import "./Portfolio.css";
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCode, faLaptopCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import LogoItem from "../SharedComponents/LogoLink/LogoLink";
 import Carousel from 'react-elastic-carousel';
 
 const gitHubIcon = <FontAwesomeIcon icon={faGithub} style={{fontSize: "43pt", color: "white"}}/>;
-const globeIcon = <FontAwesomeIcon icon={faGlobe} style={{fontSize: "43pt", color: "white"}}/>;
+const react = <FontAwesomeIcon icon={faReact} className="react-icon" style={{fontSize: "43pt", color: "#61DBFB"}}/>;
 const backendIcon = <FontAwesomeIcon icon={faCode} style={{fontSize: "13pt", color: "#BC8CF2"}}/>;
 const frontendIcon = <FontAwesomeIcon icon={faLaptopCode} style={{fontSize: "13pt", color: "#BC8CF2"}}/>;
-
-// import React from "react";
-
-// const setting = {
-//     width: '70%',
-//     height: ['450px', '270px'],
-//     layout: [1, 4],
-//     photos: [
-//       { source: 'https://i.ibb.co/dWW4Qmt/Screenshot-2022-06-14-134708.png' },
-//       { source: 'https://i.ibb.co/McLfY5V/Screenshot-2022-06-14-134708.png' },
-//       { source: 'https://i.ibb.co/CV47YJk/Screenshot-2022-06-14-134708.png' },
-//     ],
-//     showNumOfRemainingPhotos: true
-//   };
 
 const items = [
     <PortfolioItem 
@@ -35,7 +21,7 @@ const items = [
         itemCategoryIcon={frontendIcon}
         itemCategoryText={"frontend"}
         featuresDescriptionArray={["JS animation", "Working with client time", "Live layout generation"]}
-        demoIcon={globeIcon}
+        demoIcon={react}
         demoLink={"https://nlipatov.github.io/wheatField/"}/>,
 
     <PortfolioItem 
@@ -69,14 +55,6 @@ const Portfolio = () => {
                 showArrows={false}>
                 {items.map(item => item)}
             </Carousel>
-            {/* <PortfolioItem 
-                icon={gitHubIcon}
-                SourceCodeLink={"https://github.com/NLipatov/alphaTestApi"}
-                Declaration={".NET 6 API"}
-                Text={"I've started this project as a test task for Alpha-Strahovanie which is one the biggest insurance companies in Russia. It's affiliated with Alpha-Bank."}
-                itemCategoryIcon={backendIcon}
-                itemCategoryText={"backend"}
-                featuresDescriptionArray={["C# Base API Controller implementation", "Swagger", "DTOs", "In memory DB"]}/> */}
         </div>
     )
 }

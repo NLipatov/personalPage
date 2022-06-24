@@ -27,3 +27,15 @@
 .rec-dot_active{
     background-color: #BC8CF2 !important;
 }
+
+.react-icon {
+    animation-name: spin;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
