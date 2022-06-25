@@ -10,7 +10,14 @@ body{
     color: white;
     padding-bottom: 10px;
     padding-top: 25px;
+    transition: all 1s ease;
 }
+
+.AboutLight{
+    background-color: white;
+    color: black;
+}
+
 .aboutPhotoContainer{
     width: 50%;
     display: flex;
@@ -31,12 +38,12 @@ body{
     line-height: 1.5;
 }
 
-.BottomText h4 {
+/* .BottomText h4 {
     color: white;
 }
 .BottomText h4 span {
     color: white;
-}
+} */
 .TextContainer h4 span {
     color: #BC8CF2;
 }

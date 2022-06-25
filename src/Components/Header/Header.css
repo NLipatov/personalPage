@@ -92,6 +92,7 @@
     width: 100%;
     justify-content: center;
     gap: 25px;
+    align-items: center;
 }
 
 .NavBarScreenLinksDiv a {

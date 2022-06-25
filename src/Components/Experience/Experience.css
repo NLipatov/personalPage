@@ -3,6 +3,12 @@
     background-color: black;
     padding: 30px;
     padding-top: 50px;
+    transition: all 1s ease;
+}
+
+.ExperienceLight{
+    background-color: white;
+    color: black;
 }
 
 .workHistoryItem {
@@ -10,7 +16,6 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    color: white;
 }
 
 .WorkHistoryCompanyBage {
@@ -38,6 +43,11 @@
 
 .AGroupStyle{
     border: 2px solid white;
+    transition: all 1s ease;
+}
+
+.blackBorder{
+    border: 2px solid black;
 }
 
 .AGroupStyle span::first-letter {
@@ -55,7 +65,7 @@
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
     border: 3px solid green;
-    border-left-color: black;
+    border-left-color: transparent;
     align-self: center;
 }
 
@@ -120,8 +130,6 @@
 .timePeriod {
     font-size: 10pt;
     font-weight: bold;
-    background-color: black;
-    color: white;
     width: fit-content;
     margin-left: 30px;
     padding: 5px;

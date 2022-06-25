@@ -7,7 +7,7 @@ import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import LogoItem from "../SharedComponents/LogoLink/LogoLink";
 import Carousel from 'react-elastic-carousel';
 
-const gitHubIcon = <FontAwesomeIcon icon={faGithub} style={{fontSize: "43pt", color: "white"}}/>;
+const gitHubIcon = <FontAwesomeIcon icon={faGithub} className="whiteIcon" style={{fontSize: "43pt"}}/>;
 const react = <FontAwesomeIcon icon={faReact} className="react-icon" style={{fontSize: "43pt", color: "#61DBFB"}}/>;
 const backendIcon = <FontAwesomeIcon icon={faCode} style={{fontSize: "13pt", color: "#BC8CF2"}}/>;
 const frontendIcon = <FontAwesomeIcon icon={faLaptopCode} style={{fontSize: "13pt", color: "#BC8CF2"}}/>;

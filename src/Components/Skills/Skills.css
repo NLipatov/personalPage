@@ -1,6 +1,12 @@
 .Skills {
     height: auto;
     background: black;
+    transition: all 1s ease;
+}
+
+.SkillsLight{
+    background-color: white;
+    color: black;
 }
 
 .skillsList {

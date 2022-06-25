@@ -2,6 +2,21 @@
     background-color: black;
     padding: 30px;
     padding-top: 50px;
+    transition: all 1s ease;
+}
+
+.PortfolioSectionLight{
+    background-color: white;
+    color: black;
+}
+
+.whiteIcon{
+    transition: all 1s ease;
+    color: white;
+}
+
+.whiteIconLight{
+    color: black;
 }
 
 .PhotoCollage{

@@ -2,6 +2,7 @@ import "./Header.css";
 import NavBarScreen from "./NavBarScreen";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ThemeSwitcher from "../SharedComponents/LogoLink/ThemeSwitcher";
 
 const Header = () => {
     let crossAnimationPlayed = false;
@@ -33,10 +34,51 @@ const Header = () => {
     const sunIcon = <FontAwesomeIcon icon={faSun} style={{color: "black", fontSize: "12pt"}}/>
     const moonIcon = <FontAwesomeIcon icon={faMoon} style={{color: "black", fontSize: "12pt"}}/>
     const toggleIconSpanActive = () =>{
-        document.querySelector(".iconSpan").classList.toggle("_iconSpanActive");
-        document.querySelector(".darkThemeToggler").classList.toggle("_darkThemeTogglerAcive");
+        const themeTogglers = document.querySelectorAll(".iconSpan");
+        themeTogglers.forEach((x)=>{
+            x.classList.toggle("_iconSpanActive");
+        });
+
+        const themeTogglerDivs = document.querySelectorAll(".darkThemeToggler");
+        themeTogglerDivs.forEach((x)=>{
+            x.classList.toggle("_darkThemeTogglerAcive");
+        });
 
         document.querySelector(".Home").classList.toggle("HomeLight");
+        document.querySelector(".About").classList.toggle("AboutLight");
+        document.querySelector(".Skills").classList.toggle("SkillsLight");
+        document.querySelector(".Experience").classList.toggle("ExperienceLight");
+        document.querySelector(".AGroupStyle").classList.toggle("blackBorder");
+        document.querySelector(".ServiceDiv").classList.toggle("ServiceDivLight");
+
+        const serviceSquares = document.querySelectorAll(".singleServiceItem");
+        serviceSquares.forEach((x)=>{
+            x.classList.toggle("singleServiceItemBlackBorder");
+        });
+
+        const portfolioItems = document.querySelectorAll(".PortfolioItem");
+        portfolioItems.forEach((x)=>{
+            x.classList.toggle("PortfolioItemLight");
+        });
+
+        document.querySelector(".PortfolioSection").classList.toggle("PortfolioSectionLight");
+
+        const portfolioSkillIcon = document.querySelectorAll(".itemCategory");
+        portfolioSkillIcon.forEach((x)=>{
+            x.classList.toggle("itemCategoryLight");
+        });
+
+        document.querySelector(".Contacts").classList.toggle("ContactsLight");
+
+        const logoItems = document.querySelectorAll(".LogoItemInfo");
+        logoItems.forEach((x)=>{
+            x.classList.toggle("LogoItemInfoLight");
+        });
+
+        const whiteIcons = document.querySelectorAll(".whiteIcon");
+        whiteIcons.forEach((x)=>{
+            x.classList.toggle("whiteIconLight");
+        });
     } 
 
     return(
@@ -46,13 +88,8 @@ const Header = () => {
                     <span className="Name">
                         NIKITA
                     </span>
-
                     <div className="NavBar">
-                        <div className="darkThemeToggler" onClick={toggleIconSpanActive}>
-                            <span className="iconSpan">
-                                
-                            </span>
-                        </div>
+                        <ThemeSwitcher toggleIconSpanActive={toggleIconSpanActive}/>
                         <a href="#home" id="NavBarHomeLink">Home</a>
                         <a href="#about" id="NavBarAboutLink">About</a>
                         <a href="#experience" id="NavBarExperienceLink">Experience</a>
@@ -68,7 +105,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <NavBarScreen/>
+            <NavBarScreen darkThemeToggler={toggleIconSpanActive}/>
         </>
 
     )

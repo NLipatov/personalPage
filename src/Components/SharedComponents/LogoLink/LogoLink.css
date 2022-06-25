@@ -22,6 +22,10 @@
     transition: all .2s ease;
 }
 
+.LogoItemInfoLight a{
+    color: black;
+}
+
 .LogoItemInfo a:hover{
     color: #BC8CF2;
     text-decoration: none;
