@@ -6,8 +6,11 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import React, {useEffect, useState, useRef} from "react";
 import useOnScreen from "../../Hooks/useOnScreen";
 import Typed from "typed.js";
+import { useSelector, useDispatch } from 'react-redux';
+import {selectTheme} from '../Redux/ThemeSlice';
 
 const Home = () => {
+    const themeState = useSelector(selectTheme);
 
     const userIcon = <FontAwesomeIcon icon={faUser} style={{fontSize: "21pt" }}/>
     const downArrowsIcon = <FontAwesomeIcon icon={faAngleDoubleDown} />
@@ -37,7 +40,7 @@ const Home = () => {
         <div className="Home visual_component" id="home">
             <div className="ShortInfo">
                 <span>
-                    Hi there!
+                    Hi there! {themeState}
                 </span>
                 <div className="introduction">
                     <span>

@@ -9,6 +9,9 @@ import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Service from '../MyService/Service';
 import Portfolio from '../Portfolio/Portfolio';
+import { Provider } from 'react-redux';
+import { store } from '../Redux/store';
+import { Counter } from '../Redux/ThemeReduxDemo';
 
 const App = () => {
 
@@ -143,16 +146,19 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header/>
-      <Home/>     
-      <About onAboutVisible={onAboutVisible} onAboutNotVisible={onAboutNotVisible}/> 
-      <Skills 
-        skillsVisible={onSkillsVisible}
-        skillsNotVisible={onSkillsNotVisible}/>
-      <Experience/>
-      <Service/>
-      <Portfolio/>
-      <Contacts/>
+      <Provider store={store}>
+        <Counter/>
+        <Header/>
+        <Home/>     
+        <About onAboutVisible={onAboutVisible} onAboutNotVisible={onAboutNotVisible}/> 
+        <Skills 
+          skillsVisible={onSkillsVisible}
+          skillsNotVisible={onSkillsNotVisible}/>
+        <Experience/>
+        <Service/>
+        <Portfolio/>
+        <Contacts/>
+      </Provider>
     </div>
   );
 }
