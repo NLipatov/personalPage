@@ -7,6 +7,8 @@
     align-items: center;
     padding-bottom: 10px;
     transition: all 1s ease;
+    padding: 20px;
+    padding-bottom: 150px;
 }
 
 .HomeLight{
@@ -18,9 +20,9 @@
     font-size: 30pt;
     display: flex;
     flex-direction: column;
-    text-align: left;
     width: 50%;
-    padding: 10px;
+    align-items: center;
+    gap: 20px;
 }
 
 .introduction{
@@ -29,7 +31,7 @@
 }
 
 .introduction span:nth-child(2){
-    color: #BC8CF2;
+    color: #5b94ff;
 }
 .introduction span:nth-child(1)::after{
     content: " ";
@@ -37,25 +39,13 @@
 
 .PhotoContainer {
     width: 50%;
-    padding: 10px;
-    padding-left: 0px;
-    /* overflow: hidden;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px; */
+    justify-content: end;
 }
 
 .profilePicture{
     width: 50%;
 }
-
-/* @media screen and (max-width: 1026px) {
-    .profilePicture{
-        width: 60%;
-    }
-} */
 
 .HomeBriefBio{
     font-size: 11pt;

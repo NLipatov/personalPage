@@ -4,6 +4,7 @@
     padding: 30px;
     padding-top: 50px;
     transition: all 1s ease;
+    padding-bottom: 150px;
 }
 
 .ExperienceLight{
@@ -12,7 +13,7 @@
 }
 
 .workHistoryItem {
-    border-left: #BC8CF2 5px solid;
+    border-left: #5b94ff 5px solid;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -117,7 +118,7 @@
     color: black;
     font-size: 20pt;
     position: absolute;
-    background-color: #BC8CF2;
+    background-color: #5b94ff;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -145,7 +146,7 @@
 }
 
 .WorkHistoryDescription h4{
-    color: #BC8CF2;
+    color: #5b94ff;
 }
 
 
@@ -165,7 +166,7 @@
     margin-left: -11px;
     font-size: 23pt;
     font-weight: bold;
-    color: #BC8CF2;
+    color: #5b94ff;
     position: absolute;
     margin-top: -20px;
 }

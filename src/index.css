@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: rgba(188, 140, 242, 0.357);
+  background-color: rgba(91, 148, 255, 0.2);
 }
 
 code {
@@ -32,18 +32,18 @@ code {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(188, 140, 242, 0.5);
+  background-color: rgba(91, 148, 255, 0.7);
 }
 
 .btn{
-  border: #BC8CF2 3px solid;
+  border: #5b94ff 3px solid;
   width: fit-content;
   margin-top: 10px;
   padding: 10px;
   gap: 10px;
   display: flex;
   align-items: center;
-  color: #BC8CF2;
+  color: #5b94ff;
   cursor: pointer;
   text-decoration: none;
 }

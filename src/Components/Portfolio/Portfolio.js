@@ -9,8 +9,8 @@ import Carousel from 'react-elastic-carousel';
 
 const gitHubIcon = <FontAwesomeIcon icon={faGithub} className="whiteIcon" style={{fontSize: "43pt"}}/>;
 const react = <FontAwesomeIcon icon={faReact} className="react-icon" style={{fontSize: "43pt", color: "#61DBFB"}}/>;
-const backendIcon = <FontAwesomeIcon icon={faCode} style={{fontSize: "13pt", color: "#BC8CF2"}}/>;
-const frontendIcon = <FontAwesomeIcon icon={faLaptopCode} style={{fontSize: "13pt", color: "#BC8CF2"}}/>;
+const backendIcon = <FontAwesomeIcon icon={faCode} style={{fontSize: "13pt", color: "#5b94ff"}}/>;
+const frontendIcon = <FontAwesomeIcon icon={faLaptopCode} style={{fontSize: "13pt", color: "#5b94ff"}}/>;
 
 const items = [
     <PortfolioItem 

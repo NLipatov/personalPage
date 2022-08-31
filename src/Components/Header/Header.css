@@ -2,7 +2,7 @@
     display: flex;
     padding: 10px 50px 10px 50px;
     position: fixed;
-    background: rgba(0, 0, 0, 0.384);
+    background: rgba(0, 0, 0, 0.6);
     width: 100%;
     backdrop-filter: blur(1px);
     border-bottom: 0.5px solid white;
@@ -22,7 +22,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    color: #BC8CF2;
+    color: #5b94ff;
     text-shadow: 2px 0px black;
 }
 .NavBar{
@@ -111,7 +111,7 @@
     transition: all 0.7s ease;
 }
 
-._darkThemeTogglerAcive{
+._darkThemeTogglerActive{
     background-color: black;
 }
 
@@ -122,7 +122,7 @@
     width: 20px;
     transition: all 0.7s ease;
     border-radius: 50%;
-    background-color: #BC8CF2;
+    background-color: #5b94ff;
 }
 
 ._iconSpanActive{

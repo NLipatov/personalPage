@@ -8,16 +8,16 @@
 }
 
 .declaratorRow span:nth-child(2){
-    color: #BC8CF2;
+    color: #5b94ff;
     padding-bottom: 5px;
-    border-bottom: 2px solid#BC8CF2;
+    border-bottom: 2px solid#5b94ff;
 }
 
 /* .declaratorRow span:nth-child(2)::before{
     content: '';
     height: 2.5px;
     width: 100px;
-    background-color: #BC8CF2;
+    background-color: #5b94ff;
     position: absolute;
     margin-top: 35pt;
     margin-left: 10px;

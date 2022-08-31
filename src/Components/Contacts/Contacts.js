@@ -9,7 +9,7 @@ import LogoItem from ".././SharedComponents/LogoLink/LogoLink";
 const Contacts = () => {
     const telegramIcon = <FontAwesomeIcon icon={faTelegram} style={{fontSize: "43pt", color: "#229ED9"}}/>
     const skypeIcon = <FontAwesomeIcon icon={faSkype} style={{fontSize: "43pt", color: "#00aff0"}}/>
-    const emailIcon = <FontAwesomeIcon icon={faEnvelope} style={{fontSize: "43pt", color: "#BC8CF2"}}/>
+    const emailIcon = <FontAwesomeIcon icon={faEnvelope} style={{fontSize: "43pt", color: "#5b94ff"}}/>
     return(
         <div className="Contacts visual_component" id="contact">
             <Declarator

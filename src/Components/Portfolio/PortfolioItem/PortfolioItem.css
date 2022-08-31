@@ -25,7 +25,7 @@
 
 .ItemCodeLink a{
     text-decoration: none;
-    color: #BC8CF2;
+    color: #5b94ff;
 }
 
 .PortfolioItemFooter{
@@ -62,7 +62,7 @@
 }
 
 li::marker {
-    color: #BC8CF2;
+    color: #5b94ff;
 }
 
 .DeclarationText{

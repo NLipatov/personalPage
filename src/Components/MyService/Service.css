@@ -4,6 +4,7 @@
     height: auto;
     padding: 30px;
     transition: all 1s ease;
+    padding-bottom: 150px;
 }
 
 .ServiceDivLight{
@@ -36,11 +37,11 @@
 }
 
 .singleServiceItem:hover{
-    background-color: #bc8cf267;
+    background-color: #8fcada;
 }
 
 .singleServiceItem span:nth-child(2){
-    color: #BC8CF2;
+    color: #5b94ff;
 }
 
 .declarationOfService{

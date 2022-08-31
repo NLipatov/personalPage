@@ -13,23 +13,23 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
     
     const primarySkillsArray = [
         {
-            name: "HTML",
+            name: "HTML/CSS",
             percentage: 95,
             id: 0
         },
         {
-            name: "CSS",
-            percentage: 85,
+            name: "С",
+            percentage: 50,
             id: 1
+        },
+        {
+            name: "Rust",
+            percentage: 55,
+            id: 2
         },
         {
             name: "C#",
             percentage: 85,
-            id: 2
-        },
-        {
-            name: "JavaScript",
-            percentage: 77,
             id: 3
         },
         {
@@ -58,7 +58,7 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
         {
             name: "React & React Native",
-            percentage: 77,
+            percentage: 95,
             id: 8
         },
         {
@@ -88,14 +88,10 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
     ]
 
-    const targetElement = document.getElementById("NavBarAboutLink")
+    const targetElement = document.getElementById("NavBarAboutLink");
     if(isSkillsVisible){
         skillsVisible();
-        // if(targetElement){
-        //     targetElement.style.color = "#BC8CF2";
-        // }
         if(!progressAnimationPlayed.current){
-            console.log("playing progress animation");
             const joinedSkillsArray = primarySkillsArray.concat(secondarySkillsArray);
             joinedSkillsArray.forEach((skill) => {
                 const skillElement = document.getElementById(skill.id);
@@ -106,9 +102,6 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
     }
     else{
         skillsNotVisible();
-        // if(targetElement){
-        //     targetElement.style.color = "white";
-        // }
     }
 
     const primarySkillsArraySorted = sortArray(primarySkillsArray, {
@@ -126,6 +119,11 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         className="Skills"
         ref={ref}>
             <Declarator DeclaratorValue={"Skills"}/>
+            <div className="skillsDescription">
+                    <span>
+                        This section describes how comfortable it is to me to use listed technologies in development process.
+                    </span>
+                </div>
             <div className="techStack">
                 <div className="skillsList">
                     {primarySkillsArraySorted.map((skill, i) => (

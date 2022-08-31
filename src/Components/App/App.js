@@ -11,7 +11,6 @@ import Service from '../MyService/Service';
 import Portfolio from '../Portfolio/Portfolio';
 
 const App = () => {
-
   const ComponentsVisible = useRef({
     isHomeVisible: false,
     isSkillsVisible: false,
@@ -53,13 +52,9 @@ const App = () => {
     let offsetToPortfolio = getScrolledOffsetFoLinkHeader("portfolio") + 700;
     let offsetToContact = getScrolledOffsetFoLinkHeader("contact") + 500;
 
-    console.log(position)
-    console.log(`offsetToPortfolio: ${offsetToPortfolio}`);
-    console.log(`offsetToContact: ${offsetToContact}`);
 
     if(position >= offsetToHome && position < offsetToAbout) {
-      console.log("HOME")
-      document.getElementById("NavBarHomeLink").style.color = "#BC8CF2";
+      document.getElementById("NavBarHomeLink").style.color = "#5b94ff";
 
       document.getElementById("NavBarAboutLink").style.color = "white";
       document.getElementById("NavBarExperienceLink").style.color = "white";
@@ -68,8 +63,7 @@ const App = () => {
     }
     else{
       if(position >= offsetToAbout && position < offsetToExperience) {
-        console.log("ABOUT")
-        document.getElementById("NavBarAboutLink").style.color = "#BC8CF2";
+        document.getElementById("NavBarAboutLink").style.color = "#5b94ff";
 
         document.getElementById("NavBarHomeLink").style.color = "white";
         document.getElementById("NavBarExperienceLink").style.color = "white";
@@ -77,51 +71,40 @@ const App = () => {
         document.getElementById("NavBarPortfolioLink").style.color = "white";
       }
       if(position >= offsetToExperience && position < offsetToPortfolio){
-        console.log("Service!")
 
         document.getElementById("NavBarHomeLink").style.color = "white";
         document.getElementById("NavBarAboutLink").style.color = "white";
-        document.getElementById("NavBarExperienceLink").style.color = "#BC8CF2";
+        document.getElementById("NavBarExperienceLink").style.color = "#5b94ff";
         document.getElementById("NavBarContactLink").style.color = "white";
         document.getElementById("NavBarPortfolioLink").style.color = "white";
       }
       if(position >= offsetToPortfolio && position < offsetToContact){
-        console.log("Service!")
 
         document.getElementById("NavBarHomeLink").style.color = "white";
         document.getElementById("NavBarAboutLink").style.color = "white";
         document.getElementById("NavBarExperienceLink").style.color = "white";
         document.getElementById("NavBarContactLink").style.color = "white";
-        document.getElementById("NavBarPortfolioLink").style.color = "#BC8CF2";
+        document.getElementById("NavBarPortfolioLink").style.color = "#5b94ff";
       }
       if(position >= offsetToContact){
-        console.log("Contact!")
 
         document.getElementById("NavBarHomeLink").style.color = "white";
         document.getElementById("NavBarAboutLink").style.color = "white";
         document.getElementById("NavBarExperienceLink").style.color = "white";
-        document.getElementById("NavBarContactLink").style.color = "#BC8CF2";
+        document.getElementById("NavBarContactLink").style.color = "#5b94ff";
         document.getElementById("NavBarPortfolioLink").style.color = "white";
       }
-      // else{
-      //   console.log("Service")
-      //   document.getElementById("NavBarExperienceLink").style.color = "#BC8CF2";
-
-      //   document.getElementById("NavBarHomeLink").style.color = "white";
-      //   document.getElementById("NavBarAboutLink").style.color = "white";
-      // }
     }
   };
 
   useEffect(() => {
 
     if(window.pageYOffset === 0){
-      document.getElementById("NavBarHomeLink").style.color = "#BC8CF2";
+      document.getElementById("NavBarHomeLink").style.color = "#5b94ff";
     }
     window.addEventListener("scroll", handleScroll);
     
     return () => {
-    console.log('removing event listener')
     window.removeEventListener("scroll", handleScroll);
     }}, []);
 

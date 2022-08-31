@@ -21,9 +21,6 @@ const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, ite
                     </span>
                 </div>
 
-                {/* <div className="PhotoCollage">
-                    <ReactPhotoCollage {...setting} />
-                </div> */}
                 <span className="ItemDescription">
                     {Text}
                 </span>

@@ -3,6 +3,7 @@
     padding: 30px;
     padding-top: 50px;
     transition: all 1s ease;
+    padding-bottom: 150px;
 }
 
 .PortfolioSectionLight{
@@ -25,7 +26,7 @@
 }
 
 .css-8wgz7g{
-    fill: #BC8CF2 !important;
+    fill: #5b94ff !important;
 }
 
 .css-m6j0xf{
@@ -40,7 +41,7 @@
     background-color: white !important;
 }
 .rec-dot_active{
-    background-color: #BC8CF2 !important;
+    background-color: #5b94ff !important;
 }
 
 .react-icon {

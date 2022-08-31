@@ -3,8 +3,27 @@ import NavBarScreen from "./NavBarScreen";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ThemeSwitcher from "../SharedComponents/LogoLink/ThemeSwitcher";
+import { timeService } from '../../services/timeService';
+import { useEffect, useRef } from "react";
 
 const Header = () => {
+    const initialThemeSwitch = useRef({
+        switched: false,
+    });
+
+    useEffect(()=>{
+        const {getUserHours} = timeService();
+        const hours = 8;
+        if(!(hours >= 21 || hours <= 8))
+        {
+            if(initialThemeSwitch.current.switched === false)
+            {
+                toggleIconSpanActive();
+                initialThemeSwitch.current.switched = true;
+            }
+        }
+    },[]);
+
     let crossAnimationPlayed = false;
     const onCrossNavBarClick = () => {
         if(!crossAnimationPlayed){
@@ -15,7 +34,7 @@ const Header = () => {
             document.querySelectorAll(".CrossNavBar span")[1].style.marginTop = "0px";
             document.querySelectorAll(".CrossNavBar span")[2].style.marginTop = "0px";
             document.querySelector(".NavBarScreen").style.marginLeft = "0vw";
-            document.querySelector("body").style.overflow = "hidden"
+            document.querySelector("body").style.overflow = "hidden";
             crossAnimationPlayed = true;
         }
         else{
@@ -33,6 +52,7 @@ const Header = () => {
     };
     const sunIcon = <FontAwesomeIcon icon={faSun} style={{color: "black", fontSize: "12pt"}}/>
     const moonIcon = <FontAwesomeIcon icon={faMoon} style={{color: "black", fontSize: "12pt"}}/>
+
     const toggleIconSpanActive = () =>{
         const themeTogglers = document.querySelectorAll(".iconSpan");
         themeTogglers.forEach((x)=>{
@@ -41,7 +61,7 @@ const Header = () => {
 
         const themeTogglerDivs = document.querySelectorAll(".darkThemeToggler");
         themeTogglerDivs.forEach((x)=>{
-            x.classList.toggle("_darkThemeTogglerAcive");
+            x.classList.toggle("_darkThemeTogglerActive");
         });
 
         document.querySelector(".Home").classList.toggle("HomeLight");
