@@ -13,8 +13,8 @@ const Header = () => {
 
     useEffect(()=>{
         const {getUserHours} = timeService();
-        const hours = 8;
-        if(!(hours >= 21 || hours <= 8))
+        const hours = getUserHours();
+        if(!(hours >= 22 || hours <= 8))
         {
             if(initialThemeSwitch.current.switched === false)
             {

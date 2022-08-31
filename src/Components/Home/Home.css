@@ -11,6 +11,15 @@
     padding-bottom: 150px;
 }
 
+@media screen and (max-height: 600px) {
+    .Home{
+        padding-top: 150px;
+    }
+    .PhotoContainer {
+        align-self: start;
+    }
+}
+
 .HomeLight{
     background-color: white;
     color: black;
@@ -41,6 +50,7 @@
     width: 50%;
     display: flex;
     justify-content: end;
+    padding: 20px;
 }
 
 .profilePicture{
@@ -79,6 +89,9 @@
         font-size: 15pt;
         height: auto;
         min-height: 130px;
+    }
+    .PhotoContainer{
+        justify-content: center;
     }
 }
 
