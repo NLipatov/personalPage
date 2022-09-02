@@ -44,7 +44,7 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
         {
             name: "SQL",
-            percentage: 55,
+            percentage: 75,
             id: 6
         },
     ]
