@@ -4,7 +4,6 @@ import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Skills from '../Skills/Skills';
 import Contacts from '../Contacts/Contacts';
-import useOnScreen from "../../Hooks/useOnScreen";
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Service from '../MyService/Service';
@@ -39,7 +38,7 @@ const App = () => {
 
   const scrollPosition = useRef(0);
   const handleScroll = () => {
-    const position = window.pageYOffset;
+    const position = window.scrollY;
     scrollPosition.current = position;
 
     nodeList = document.querySelectorAll(".visual_component");
@@ -47,7 +46,6 @@ const App = () => {
 
     let offsetToHome = getScrolledOffsetFoLinkHeader("home");
     let offsetToAbout = getScrolledOffsetFoLinkHeader("about") - 400;
-    let offsetToSkills = getScrolledOffsetFoLinkHeader("skills");
     let offsetToExperience = getScrolledOffsetFoLinkHeader("experience") + 300;
     let offsetToPortfolio = getScrolledOffsetFoLinkHeader("portfolio") + 700;
     let offsetToContact = getScrolledOffsetFoLinkHeader("contact") + 500;
@@ -99,23 +97,24 @@ const App = () => {
 
   useEffect(() => {
 
-    if(window.pageYOffset === 0){
+    if(window.scrollY === 0){
       document.getElementById("NavBarHomeLink").style.color = "#5b94ff";
     }
     window.addEventListener("scroll", handleScroll);
     
     return () => {
     window.removeEventListener("scroll", handleScroll);
-    }}, []);
+    }});
 
   let nodeList = document.querySelectorAll(".visual_component");
   let nodes = Array.prototype.slice.call(nodeList, 0);
 
   const getScrolledOffsetFoLinkHeader = (linkId) => {
     let offsetValue = 0;
-    for (let i = 0; i < nodes.length; i++) {
-      if(nodes[i].id !== linkId){
-        offsetValue += nodes[i].offsetHeight;
+    for(let node of nodes) 
+    {
+      if(node.id !== linkId){
+        offsetValue += node.offsetHeight;
       }
       else{
         return offsetValue;

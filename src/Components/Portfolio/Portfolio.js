@@ -4,7 +4,6 @@ import PortfolioItem from "./PortfolioItem/PortfolioItem";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import LogoItem from "../SharedComponents/LogoLink/LogoLink";
 import Carousel from 'react-elastic-carousel';
 
 const gitHubIcon = <FontAwesomeIcon icon={faGithub} className="whiteIcon" style={{fontSize: "43pt"}}/>;

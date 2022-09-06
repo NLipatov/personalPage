@@ -1,10 +1,8 @@
 import "./Home.css";
 import profilePicture from "../../img/HomePicture.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import React, {useEffect, useState, useRef} from "react";
-import useOnScreen from "../../Hooks/useOnScreen";
+import { faAngleDoubleDown, faUser } from '@fortawesome/free-solid-svg-icons';
+import React, {useEffect} from "react";
 import Typed from "typed.js";
 
 const Home = () => {
@@ -54,11 +52,10 @@ const Home = () => {
                 </a>
             </div>
             <div className="PhotoContainer">
-                <img className="profilePicture photo" src={profilePicture}/>
+                <img alt="Profile" className="profilePicture photo" src={profilePicture}/>
             </div>
             <div className="downArrowsDiv">
                 {downArrowsIcon}
-                {/* {!isaboutVisible ? downArrowsIcon : null} */}
             </div>
         </div>
     )

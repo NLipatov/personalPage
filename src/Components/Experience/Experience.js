@@ -1,14 +1,9 @@
 import "./Experience.css";
 import Declarator from "../ComponentDeclarator/Declarator";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import useOnScreen from "../../Hooks/useOnScreen";
-import React, { useRef } from "react";
+import { faBriefcase, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Experience = () => {
-
-
     const briefcaseIcon = <FontAwesomeIcon icon={faBriefcase} />
     const chevronDownIcon = <FontAwesomeIcon icon={faChevronDown} />
     return(

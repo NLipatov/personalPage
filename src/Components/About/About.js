@@ -1,7 +1,6 @@
 import "./About.css";
 import useOnScreen from "../../Hooks/useOnScreen";
 import React, {useRef} from "react";
-import Declarator from "../ComponentDeclarator/Declarator";
 import moment from "moment";
 
 const About = ({onAboutVisible, onAboutNotVisible}) => {

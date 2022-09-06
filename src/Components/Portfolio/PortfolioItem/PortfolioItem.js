@@ -1,6 +1,5 @@
 import React from "react";
 import "./PortfolioItem.css";
-import { ReactPhotoCollage } from "react-photo-collage";
 import LogoItem from "../../SharedComponents/LogoLink/LogoLink";
 
 const PortfolioItem = ({imageLinks, Declaration, Text, SourceCodeLink, icon, itemCategoryIcon, itemCategoryText, featuresDescriptionArray, demoIcon, demoLink}) => {

@@ -31,13 +31,13 @@
 .DHLStyle {
     color: #D40511;
     background-color: #FFCC00;
-    font-family: Sabon;
+    font-family: Sabon, serif;
 }
 
 .IKEAStyle {
     color: #0058AB;
     background-color:  #FBD914;
-    font-family: Sabon;
+    font-family: Sabon, serif;
     border: #0058AB 7px solid;
     border-radius: 25%;
 }
@@ -53,9 +53,6 @@
 
 .AGroupStyle span::first-letter {
     color: rgb(237, 204, 120);
-}
-
-.DynamicSunStyle {
 }
 
 .DynamicSunStyle span:nth-child(2) {

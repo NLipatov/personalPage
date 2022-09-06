@@ -1,7 +1,5 @@
 import "./Header.css";
 import NavBarScreen from "./NavBarScreen";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ThemeSwitcher from "../SharedComponents/LogoLink/ThemeSwitcher";
 import { timeService } from '../../services/timeService';
 import { useEffect, useRef } from "react";
@@ -50,8 +48,6 @@ const Header = () => {
         }
 
     };
-    const sunIcon = <FontAwesomeIcon icon={faSun} style={{color: "black", fontSize: "12pt"}}/>
-    const moonIcon = <FontAwesomeIcon icon={faMoon} style={{color: "black", fontSize: "12pt"}}/>
 
     const toggleIconSpanActive = () =>{
         const themeTogglers = document.querySelectorAll(".iconSpan");

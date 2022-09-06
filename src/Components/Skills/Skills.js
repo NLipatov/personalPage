@@ -1,6 +1,6 @@
 import "./Skills.css";
 import useOnScreen from "../../Hooks/useOnScreen";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import Declarator from "../ComponentDeclarator/Declarator";
 import SingleSkill from "./SingleSkill/SingleSkill";
 import sortArray from 'sort-array';
@@ -88,7 +88,6 @@ const Skills = ({skillsVisible, skillsNotVisible}) => {
         },
     ]
 
-    const targetElement = document.getElementById("NavBarAboutLink");
     if(isSkillsVisible){
         skillsVisible();
         if(!progressAnimationPlayed.current){
