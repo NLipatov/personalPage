@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { timeService } from '../services/timeService';
+import globalThemeSwitcher from '../services/globalThemeSwitcher';
 
 const getUserTheme = () => {
     const {getThemeBasedOnUserTime} = timeService();
@@ -12,16 +13,21 @@ export const counterSlice = createSlice({
     value: getUserTheme(),
   },
   reducers: {
-    setToLight: (state) => {
-        state.value = 'ligth';
-    },
-    setToDark: (state) => {
+    toggleTheme: (state) => {
+      if(state.value === 'light')
+      {
         state.value = 'dark';
+      }
+      else
+      {
+        state.value = 'light';
+      }
+      globalThemeSwitcher();
     }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { setToLight, setToDark } = counterSlice.actions
+export const { toggleTheme } = counterSlice.actions
 
 export default counterSlice.reducer

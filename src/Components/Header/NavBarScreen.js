@@ -1,14 +1,7 @@
 import ThemeSwitcher from "../SharedComponents/LogoLink/ThemeSwitcher";
+import { hideNavBarScreen } from '../../services/burgerMenuHandler';
 
 const NavBarScreen = () => {
-    const hideNavBarScreen = () => {
-        document.querySelectorAll(".CrossNavBar span")[0].style.display = "";
-        document.querySelectorAll(".CrossNavBar span")[1].style.transform = "rotate(90deg)";
-        document.querySelectorAll(".CrossNavBar span")[2].style.transform = "rotate(90deg)";
-        document.querySelectorAll(".CrossNavBar span")[2].style.marginTop = "10px";
-        document.querySelector(".NavBarScreen").style.marginLeft = "100vw";
-        document.querySelector("body").style.overflow = "auto";
-    };
     return (
         <div className="NavBarScreen">
             <div className="NavBarScreenLinksDiv">
