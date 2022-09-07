@@ -36,11 +36,12 @@ const Service = () => {
         <div className="ServiceDiv">
             <Declarator DeclaratorName="So what can I" DeclaratorValue={"Offer?"}/>
             <div className="ServiceItems">
-                {ServiceList.map((service) => 
+                {ServiceList.map((service, i) => 
                     (<ServiceItem 
                         serviceIcon={service.icon} 
                         skillName={service.name}
-                        description={service.description}/>)
+                        description={service.description}
+                        key={i}/>)
                 )}
             </div>
         </div>

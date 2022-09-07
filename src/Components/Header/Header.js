@@ -2,8 +2,21 @@ import "./Header.css";
 import NavBarScreen from "./NavBarScreen";
 import ThemeSwitcher from "../SharedComponents/LogoLink/ThemeSwitcher";
 import { onCrossNavBarClick } from '../../services/burgerMenuHandler';
+import { timeService } from '../../services/timeService';
+import { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
+import globalThemeSwitcher from '../../services/globalThemeSwitcher';
 
 const Header = () => {
+    const themeNormalisation = useRef({isNormalized: false});
+    const currentTheme = useSelector((state) => state.counter.value);
+    useEffect(() => {
+        const {getThemeBasedOnUserTime} = timeService();
+        if(currentTheme !== getThemeBasedOnUserTime() && themeNormalisation.current.isNormalized === false) {
+            globalThemeSwitcher();
+            themeNormalisation.current.isNormalized = true;
+        }
+    }, [currentTheme]);
     return(
         <>
             <div className="Header">

@@ -16,6 +16,7 @@ const items = [
         icon={gitHubIcon}
         SourceCodeLink={"https://github.com/NLipatov/alphaTestApi"}
         Declaration={"React Wheat Field"}
+        key={"React Wheat Field"}
         Text={"The idea of this application is quite simple: depending on the time on your computer, it draws a landscape with a wheat field. As in reality, the sun will rise in the early morning and set in the late evening. Depending on the time, the representation of clouds, fields, and the sun will change. Open the demo and take a look!"}
         itemCategoryIcon={frontendIcon}
         itemCategoryText={"frontend"}
@@ -27,6 +28,7 @@ const items = [
         icon={gitHubIcon}
         SourceCodeLink={"https://github.com/NLipatov/alphaTestApi"}
         Declaration={".NET 6 API"}
+        key={".NET 6 API"}
         Text={"I've started this project as a test task for Alpha-Strahovanie which is one the biggest insurance companies in Russia. It's affiliated with Alpha-Bank."}
         itemCategoryIcon={backendIcon}
         itemCategoryText={"backend"}
@@ -36,6 +38,7 @@ const items = [
         icon={gitHubIcon}
         SourceCodeLink={"https://github.com/NLipatov/alphaTestApi"}
         Declaration={"This site itself!"}
+        key={"This site itself!"}
         Text={"I didn't like the way the resume was formed hh.ru - the most popular job search site in Russia. Well, I'm a web developer myself. What prevents me from making a resume page myself? So Here it is."}
         itemCategoryIcon={frontendIcon}
         itemCategoryText={"frontend"}
@@ -46,9 +49,6 @@ const Portfolio = () => {
     return (
         <div className="PortfolioSection visual_component" id="portfolio">
             <Declarator DeclaratorValue={"Portfolio"}/>
-            {/* <div className="PhotoCollage">
-                <ReactPhotoCollage {...setting} />
-            </div> */}
             <Carousel
                 autoPlaySpeed={3000}
                 showArrows={false}>
