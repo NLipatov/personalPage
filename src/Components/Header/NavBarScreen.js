@@ -1,6 +1,6 @@
 import ThemeSwitcher from "../SharedComponents/LogoLink/ThemeSwitcher";
 
-const NavBarScreen = ({darkThemeToggler}) => {
+const NavBarScreen = () => {
     const hideNavBarScreen = () => {
         document.querySelectorAll(".CrossNavBar span")[0].style.display = "";
         document.querySelectorAll(".CrossNavBar span")[1].style.transform = "rotate(90deg)";
@@ -17,7 +17,7 @@ const NavBarScreen = ({darkThemeToggler}) => {
                 <a href="#experience" id="NavBarExperienceLink" onClick={hideNavBarScreen}>Experience</a>
                 <a href="#portfolio" id="NavBarPortfolioLink" onClick={hideNavBarScreen}>Portfolio</a>
                 <a href="#contact" id="NavBarContactLink" onClick={hideNavBarScreen}>Contact</a>
-                <ThemeSwitcher toggleIconSpanActive={darkThemeToggler}/>
+                <ThemeSwitcher/>
             </div>
         </div>
     )

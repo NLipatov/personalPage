@@ -7,5 +7,17 @@ export const timeService = () =>
         return hour;
     }
 
-    return {getUserHours};
+    const getThemeBasedOnUserTime = () => {
+        const hour = getUserHours();
+        if(!(hour >= 22 || hour <= 8))
+        {
+            return 'light';
+        }
+        else
+        {
+            return 'dark';
+        }
+    }
+
+    return {getUserHours, getThemeBasedOnUserTime};
 }

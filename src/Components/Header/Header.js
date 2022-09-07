@@ -3,24 +3,29 @@ import NavBarScreen from "./NavBarScreen";
 import ThemeSwitcher from "../SharedComponents/LogoLink/ThemeSwitcher";
 import { timeService } from '../../services/timeService';
 import { useEffect, useRef } from "react";
+import { useSelector, useDispatch } from 'react-redux'
+import { setToDark, setToLight } from '../../Store/counterSlice';
 
 const Header = () => {
-    const initialThemeSwitch = useRef({
-        switched: false,
-    });
+    const count = useSelector(state => state.counter.value)
+    const dispatch = useDispatch()
 
-    useEffect(()=>{
-        const {getUserHours} = timeService();
-        const hours = getUserHours();
-        if(!(hours >= 22 || hours <= 8))
-        {
-            if(initialThemeSwitch.current.switched === false)
-            {
-                toggleIconSpanActive();
-                initialThemeSwitch.current.switched = true;
-            }
-        }
-    },[]);
+    // const initialThemeSwitch = useRef({
+    //     switched: false,
+    // });
+
+    // useEffect(()=>{
+    //     const {getUserHours} = timeService();
+    //     const hours = getUserHours();
+    //     if(!(hours >= 22 || hours <= 8))
+    //     {
+    //         if(initialThemeSwitch.current.switched === false)
+    //         {
+    //             toggleIconSpanActive();
+    //             initialThemeSwitch.current.switched = true;
+    //         }
+    //     }
+    // },[]);
 
     let crossAnimationPlayed = false;
     const onCrossNavBarClick = () => {
@@ -49,54 +54,6 @@ const Header = () => {
 
     };
 
-    const toggleIconSpanActive = () =>{
-        const themeTogglers = document.querySelectorAll(".iconSpan");
-        themeTogglers.forEach((x)=>{
-            x.classList.toggle("_iconSpanActive");
-        });
-
-        const themeTogglerDivs = document.querySelectorAll(".darkThemeToggler");
-        themeTogglerDivs.forEach((x)=>{
-            x.classList.toggle("_darkThemeTogglerActive");
-        });
-
-        document.querySelector(".Home").classList.toggle("HomeLight");
-        document.querySelector(".About").classList.toggle("AboutLight");
-        document.querySelector(".Skills").classList.toggle("SkillsLight");
-        document.querySelector(".Experience").classList.toggle("ExperienceLight");
-        document.querySelector(".AGroupStyle").classList.toggle("blackBorder");
-        document.querySelector(".ServiceDiv").classList.toggle("ServiceDivLight");
-
-        const serviceSquares = document.querySelectorAll(".singleServiceItem");
-        serviceSquares.forEach((x)=>{
-            x.classList.toggle("singleServiceItemBlackBorder");
-        });
-
-        const portfolioItems = document.querySelectorAll(".PortfolioItem");
-        portfolioItems.forEach((x)=>{
-            x.classList.toggle("PortfolioItemLight");
-        });
-
-        document.querySelector(".PortfolioSection").classList.toggle("PortfolioSectionLight");
-
-        const portfolioSkillIcon = document.querySelectorAll(".itemCategory");
-        portfolioSkillIcon.forEach((x)=>{
-            x.classList.toggle("itemCategoryLight");
-        });
-
-        document.querySelector(".Contacts").classList.toggle("ContactsLight");
-
-        const logoItems = document.querySelectorAll(".LogoItemInfo");
-        logoItems.forEach((x)=>{
-            x.classList.toggle("LogoItemInfoLight");
-        });
-
-        const whiteIcons = document.querySelectorAll(".whiteIcon");
-        whiteIcons.forEach((x)=>{
-            x.classList.toggle("whiteIconLight");
-        });
-    } 
-
     return(
         <>
             <div className="Header">
@@ -104,8 +61,17 @@ const Header = () => {
                     <span className="Name">
                         NIKITA
                     </span>
+                    <span>
+                        counter: {count}
+                    </span>
+                    <button onClick={() => dispatch(setToLight())}>
+                        Light
+                    </button>
+                    <button onClick={() => dispatch(setToDark())}>
+                        Dark
+                    </button>
                     <div className="NavBar">
-                        <ThemeSwitcher toggleIconSpanActive={toggleIconSpanActive}/>
+                        <ThemeSwitcher/>
                         <a href="#home" id="NavBarHomeLink">Home</a>
                         <a href="#about" id="NavBarAboutLink">About</a>
                         <a href="#experience" id="NavBarExperienceLink">Experience</a>
@@ -121,7 +87,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <NavBarScreen darkThemeToggler={toggleIconSpanActive}/>
+            <NavBarScreen/>
         </>
 
     )
